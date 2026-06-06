@@ -1,0 +1,181 @@
+{
+  "total_score": 19,
+  "max_score": 50,
+  "item_scores": [
+    {
+      "item_id": "1",
+      "item_type": "equation",
+      "score": 3,
+      "max_score": 3,
+      "reasoning": "正确写出了相对介电常数张量的矩阵形式。"
+    },
+    {
+      "item_id": "2",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 4,
+      "reasoning": "未显式写出k空间下的麦克斯韦方程组独立形式，但结合实空间波动方程正确引出了方程，按跳步处理给一半分。"
+    },
+    {
+      "item_id": "3",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 2,
+      "reasoning": "未明确写出用E表示B和D的公式，但在后续坡印廷矢量计算中正确且等价应用了该物理关系，按向前追溯/跳步给一半分。"
+    },
+    {
+      "item_id": "4",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "正确列出了电场E满足的矢量微分方程及化简的含参形式。"
+    },
+    {
+      "item_id": "5",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "未使用n^2/k^2及波矢方向替换公式给出对应的形式。"
+    },
+    {
+      "item_id": "6",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "未写出行列式等于0这一求解条件的一般张量形式。"
+    },
+    {
+      "item_id": "7",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "正确列出了代入具体坐标后的三个电场分量方程组，在数学物理意义上完美等价于该评分点的矩阵条件。"
+    },
+    {
+      "item_id": "8",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 4,
+      "reasoning": "跳过了化简分量方程组/展开行列式的代数中间步骤，直接得到了正确结果，依跳步法则给对应步骤一半分。"
+    },
+    {
+      "item_id": "11",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "解得的相折射率对应的两个表达式均完全正确。"
+    },
+    {
+      "item_id": "12",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "正确求出了对应情形下的D矢量和E矢量方向和比例（与参考答案形式完全等价）。"
+    },
+    {
+      "item_id": "13",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 1,
+      "reasoning": "写出了正确的由场强求坡印廷矢量的计算式。"
+    },
+    {
+      "item_id": "14",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 1,
+      "reasoning": "基于求解出的电磁场正确计算了传播方向的切线角度。"
+    },
+    {
+      "item_id": "15",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 1,
+      "reasoning": "给出了属于o光情形下的各个物理量正确结果及正确角度。"
+    },
+    {
+      "item_id": "18",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "答卷未包含第(3)问部分，无作答。"
+    },
+    {
+      "item_id": "22",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 5,
+      "reasoning": "答卷未包含第(3)问部分，无作答。"
+    },
+    {
+      "item_id": "28",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 4,
+      "reasoning": "答卷未包含第(3)问部分，无作答。"
+    },
+    {
+      "item_id": "29",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "答卷未包含第(3)问部分，无作答。"
+    },
+    {
+      "item_id": "30",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "答卷未包含第(3)问部分，无作答。"
+    },
+    {
+      "item_id": "31",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "答卷未包含第(3)问部分，无作答。"
+    },
+    {
+      "item_id": "35",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 3,
+      "reasoning": "答卷未包含第(3)问部分，无作答。"
+    },
+    {
+      "item_id": "36",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "答卷未包含第(3)问部分，无作答。"
+    },
+    {
+      "item_id": "37",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "答卷未包含第(3)问部分，无作答。"
+    },
+    {
+      "item_id": "40",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "答卷未包含第(3)问部分，无作答。"
+    }
+  ],
+  "student_source": "第7题.jpg",
+  "standard_source": "double_refraction.tex",
+  "model": "google/gemini-3.1-pro-preview",
+  "provider": "openrouter",
+  "usage": {
+    "prompt_tokens": 13005,
+    "completion_tokens": 10786,
+    "total_tokens": 23791,
+    "generation_id": "gen-1780740436-xiDAfLgh1YyJvLNRCP08"
+  },
+  "problem_title": "双折射晶体",
+  "submitted_at": "2026-06-06T10:03:28Z",
+  "completed_at": "2026-06-06T10:09:10Z",
+  "duration_seconds": 341.77
+}

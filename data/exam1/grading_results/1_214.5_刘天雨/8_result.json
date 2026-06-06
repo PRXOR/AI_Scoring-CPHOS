@@ -1,0 +1,104 @@
+{
+  "total_score": 36,
+  "max_score": 36,
+  "item_scores": [
+    {
+      "item_id": "1",
+      "item_type": "equation",
+      "score": 3,
+      "max_score": 3,
+      "reasoning": "正确结合能量守恒和运动学关系求出了角速度和角加速度的表达式，与标准答案一致。"
+    },
+    {
+      "item_id": "2",
+      "item_type": "equation",
+      "score": 3,
+      "max_score": 3,
+      "reasoning": "通过对受力分析得出剪切应力的表达式，符号上的差异仅源于力的方向定义不同，物理结果等价且完全正确。"
+    },
+    {
+      "item_id": "3",
+      "item_type": "equation",
+      "score": 3,
+      "max_score": 3,
+      "reasoning": "巧妙地采用对顶端部分的转动方程直接导出了力矩M的表达式，方法清晰且结果与标答完全匹配。"
+    },
+    {
+      "item_id": "4",
+      "item_type": "equation",
+      "score": 3,
+      "max_score": 3,
+      "reasoning": "正确写出了面积分的表达式并成功计算出截面抗弯刚度的物理量对应项。"
+    },
+    {
+      "item_id": "5",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "正确给出了挠曲率方程，在区分无量纲化距离x的基础上严谨地加入了l^2的系数，物理实质完美契合。"
+    },
+    {
+      "item_id": "6",
+      "item_type": "equation",
+      "score": 4,
+      "max_score": 4,
+      "reasoning": "正确通过逐步积分得到了形变偏移量y的表达式，提出的系数和多项式与标准答案完全等价。"
+    },
+    {
+      "item_id": "7",
+      "item_type": "equation",
+      "score": 6,
+      "max_score": 6,
+      "reasoning": "正确列出了由于形变导致的附加重力矩ΔM的积分式，并成功且准确地得出了积分结果。"
+    },
+    {
+      "item_id": "8",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "在列举动力学方程时，方程右侧完整包含了总重力矩（原重力矩与附加力矩之合）的正确形式。"
+    },
+    {
+      "item_id": "9",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 1,
+      "reasoning": "在角运动方程以及最开始的能量式中，均正确应用了均质杆的转动惯量表达式。"
+    },
+    {
+      "item_id": "11",
+      "item_type": "equation",
+      "score": 3,
+      "max_score": 3,
+      "reasoning": "基于旋转动力学方程进行了正确的小量近似并得到了频率ω的精确表达式。"
+    },
+    {
+      "item_id": "12",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "正确求出了要想发生振动所需的杨氏模量E的临界条件不等式。"
+    },
+    {
+      "item_id": "言之有理即可；答出一个方面2分，两个方面及以上_1",
+      "item_type": "text",
+      "score": 4,
+      "max_score": 4,
+      "reasoning": "合理列举了长宽尺寸近似不成立以及材料本身过软导致小形变假设失效两个有效方面，分析十分到位。"
+    }
+  ],
+  "student_source": "第8题.jpg",
+  "standard_source": "stick.tex",
+  "model": "google/gemini-3.1-pro-preview",
+  "provider": "openrouter",
+  "usage": {
+    "prompt_tokens": 4058,
+    "completion_tokens": 7578,
+    "total_tokens": 11636,
+    "generation_id": "gen-1780740551-Bqub5QpzHnZaUx7n8vsi"
+  },
+  "problem_title": "啊啊啊宝宝你是一个软软的小蛋糕",
+  "submitted_at": "2026-06-06T10:09:10Z",
+  "completed_at": "2026-06-06T10:10:09Z",
+  "duration_seconds": 58.69
+}

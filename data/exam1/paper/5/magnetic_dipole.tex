@@ -1,0 +1,207 @@
+\documentclass[answer]{cphos}
+
+% === 设置文档信息 ===
+\cphostitle{CPHOS物理竞赛联考}
+\cphossubtitle{理论试题命题模板}
+
+\setscorecheck{true}  % 启用分值检查，可设为false关闭
+
+\begin{document}
+\begin{problem}[50]{磁偶极矩}
+
+% === 题干 ===
+\begin{problemstatement}
+在静磁学当中，磁偶极矩和电偶极矩类似，被定义为磁矢势多级展开一阶量对应的、与系统电流分布有关的某个物理量。其具体表达式为：
+\begin{equation}
+	\vec{m}=\frac{1}{2}\iiint\vec{r^\prime}\times\vec{j}(\vec{r^\prime})\,\mathrm{d}V^\prime\eqtag{1} 
+\end{equation}
+
+其中\(\vec{r^\prime}\)表示系统中某处电流的位矢。磁偶极矩在外场中的能量为：
+\begin{equation}
+	W=-\vec{m}\cdot\vec{B}\eqtag{2}\label{1}
+\end{equation}
+
+\subq{1}考虑最简单的情况：一个通有电流\(I\)的平面圆环放在匀强磁场中，计算其磁偶极矩的大小和系统与外场的相互作用能。系统与外磁场相互作用能的公式：
+\begin{equation}
+	W=\oint I\,\mathrm{d}\vec{l}\cdot\vec{A}\eqtag{3}
+\end{equation}
+
+其中\(\vec{A}\)是磁矢势。得到的结果与式\ref{1}相同吗？若不同，试解释之。
+
+\subq{2}计算总电量为\(Q\)的均匀带电球以角速度\(\vec{\omega}\)旋转时的磁偶极矩。假设该球是匀质的且质量为\(M\)，给出其角动量与磁偶极矩的关系。
+
+\subq{3}考虑两个位置固定的、距离为\(d\)的半径为\(R\)，带电量为\(Q\)，质量为\(M\)的带电旋转球之间的相互作用。以下小问中忽略感生电场的作用。
+
+\subsubq{3.1}直接写出可以将两个球的相互作用看作两个磁偶极子之间相互作用的条件。
+
+\subsubq{3.2}设球\(1\)的角速度为\(\vec{\omega}_1\)，球\(2\)的角速为\(\vec{\omega}_2\)，写出系统总能量的表达式。
+
+\subsubq{3.3}固定球\(1\)的角速度矢量为\(\vec{\omega}_0\)不变。忽略感生电场，给出球\(2\)角速度随时间的变化关系\(\vec{\omega}_2(t)\)。球\(2\)的初始角速度\(\vec{\omega}_2(0)\)已知。
+
+\subsubq{3.4}考虑球\(1\)的角速度矢量也在变化的情形。忽略感生电场，给出两球角速度满足的微分方程。计算系统的总角动量和总能量的变化率。角动量守恒吗？能量守恒吗？
+
+\end{problemstatement}
+
+% === 解答 ===
+\begin{solution}
+\solsubq{1}{11}
+不妨考虑磁感应强度与电流环平面垂直的情形，\(\vec{S}\)和\(\vec{B}\)都沿\(z\)轴正方向。将原点取在电流环的圆心，此时磁矢势在柱坐标下可以取为:
+\begin{equation}
+	\vec{A}=\frac{1}{2}B\rho\hat{\theta}\eqtagscore{1}{2}
+\end{equation}
+
+其中\(\rho=\sqrt{x^2+y^2}\)为柱坐标下径向的值。直接积分得到相互作用能：
+\begin{equation}
+	W=\oint I\,\mathrm{d}\vec{l}\cdot\vec{A}=\uppi R^2 IB\eqtagscore{2}{2}
+\end{equation}
+
+系统的磁偶极矩：
+\begin{equation}
+	\vec{m}=\frac{1}{2}\iiint\vec{r^\prime}\times\vec{j}\,\mathrm{d}V^\prime=I\left(\frac{1}{2}\oint\vec{r^\prime}\times\mathrm{d}\vec{l}\right)=I\vec{S}\eqtagscore{3}{2}
+\end{equation}
+
+由此得到系统在外场中的能量：
+\begin{equation}
+	W^\prime=-\vec{m}\cdot\vec{B}=-\uppi R^2IB=-W\eqtagscore{4}{2}
+\end{equation}
+
+二者不同。这是因为\(W^\prime\)指的是将电流环与外场之间的相互作用能（即外力移动电流环所需的能量），而\(W\)是自能与互能的和（还包括移动过程中为保持电流大小不变，克服感应电动势做的功）。
+
+\addtext{说明不同}{1}
+\addtext{说明区别的来源}{2}
+
+\solsubq{2}{10}
+位置为\(\vec{r^\prime}\)处的电流密度为：
+
+\begin{equation}
+	\vec{j}(\vec{r^\prime})=\rho_e\vec{v}(\vec{r^\prime})\eqtagscore{5}{2}
+\end{equation}
+
+其中\(\rho_e\)为电荷密度。代入题给式\ref{1}得到：
+\begin{equation}
+	\vec{m}=\frac{1}{2}\iiint\vec{r^\prime}\times\rho_e\vec{v}(\vec{r^\prime})\,\mathrm{d}V^\prime\eqtagscore{6}{1}
+\end{equation}
+
+而系统的角动量表达式为：
+\begin{equation}
+	\vec{L}=\iiint\vec{r^\prime}\times\rho_m\vec{v}(\vec{r^\prime})\,\mathrm{d}V^\prime\eqtagscore{7}{2}
+\end{equation}
+
+其中\(\rho_m\)为质量密度。由于\(\rho_e\)和\(\rho_m\)均为常数，可得：
+\begin{equation}
+	\vec{L}=\frac{2\rho_m}{\rho_e}\vec{m}=\frac{2M}{Q}\vec{m}\eqtagscore{8}{2}
+\end{equation}
+
+匀质球的角动量：
+\begin{equation}
+	\vec{L}=\frac{2}{5}MR^2\vec{\omega}\eqtagscore{9}{1}
+\end{equation}
+
+因此体系的磁偶极矩：
+\begin{equation}
+	\vec{m}=\frac{1}{5}QR^2\vec{\omega}\eqtagscore{10}{2}
+\end{equation}
+
+\solsubq{3}{29}
+\solsubsubq{3.1}{1}
+磁偶极矩的能量表达式推导中用到体系尺度远小于场变化特征尺度的条件。放在题给条件中就是：
+\begin{equation}
+	R\ll d\eqtagscore{11}{1}
+\end{equation}
+
+注：如果说是因为远场近似导致需要\(R\ll d\)，原则上可以扣分。（题给情形中，系统对外界产生的场和偶极子场形式相同。）
+
+\solsubsubq{3.2}{5}
+磁偶极子\(1\)产生的磁场：
+\begin{equation}
+	\vec{B}_{m_1}(\vec{r})=\frac{\mu_0}{4\uppi r^3}\left(3(\vec{m}_1\cdot\hat{r})\hat{r}-\vec{m}_1\right)\eqtagscore{12}{2}\label{2}
+\end{equation}
+
+相互作用能：
+\begin{equation}
+	U=-\vec{m}_2\cdot\vec{B}_{m_1}(\vec{d})=\frac{\mu_0}{4\uppi d^3}\left(-3(\vec{m}_1\cdot\hat{r})(\vec{m}_2\cdot\hat{r})+(\vec{m}_1\cdot\vec{m}_2)\right)\eqtagscore{13}{2}
+\end{equation}
+
+代入\(\vec{m}\)和\(\vec{\omega}\)的关系得到：
+
+\begin{equation}
+	U=\frac{\mu_0 Q^2R^4}{100\uppi d^3}\left(-3(\vec{\omega}_1\cdot\hat{r})(\vec{\omega}_2\cdot\hat{r})+(\vec{\omega}_1\cdot\vec{\omega}_2)\right)\eqtagscore{14}{1}\label{5}
+\end{equation}
+
+其中\(\hat{r}\)表示由球\(1\)球心指向球\(2\)球心的单位矢径。
+
+\solsubsubq{3.3}{10}
+磁偶极子在外场中受力矩：
+\begin{equation}
+	\vec{\tau}=\vec{m}\times\vec{B}\eqtagscore{15}{1}
+\end{equation}
+
+由式\ref{2},球\(2\)受到的力矩为：
+\begin{equation}
+	\vec{\tau}_2=\vec{\omega}_2\times\frac{\mu_0 Q^2R^4}{100\uppi d^3}\left(3(\vec{\omega}_1\cdot\hat{r})\hat{r}-\vec{\omega}_1\right)\eqtagscore{16}{1}
+\end{equation}
+
+角动量定理：
+\begin{equation}
+	\vec{\tau}_2=\frac{\mathrm{d}\vec{L}_2}{\mathrm{d}t}=\frac{2MR^2}{5}\frac{\mathrm{d}\vec{\omega}_2}{\mathrm{d}t}\eqtagscore{17}{2}
+\end{equation}
+
+得到\(\vec{\omega_2}\)满足的微分方程：
+
+\begin{equation}
+	\frac{\mathrm{d}\vec{\omega}_2}{\mathrm{d}t}=\vec{\omega}_2\times\frac{\mu_0 Q^2R^2}{40\uppi Md^3}\left(3(\vec{\omega}_1\cdot\hat{r})\hat{r}-\vec{\omega}_1\right)\eqtagscore{18}{2}\label{3}
+\end{equation}
+
+这表明\(\vec{\omega}_2\)绕固定轴进动。进动轴：
+\begin{equation}
+	\hat{n}=\frac{3(\vec{\omega}_1\cdot\hat{r})\hat{r}-\vec{\omega}_1}{\vert3(\vec{\omega}_1\cdot\hat{r})\hat{r}-\vec{\omega}_1\vert}\eqtagscore{19}{1}
+\end{equation}
+
+进动角速度：
+\begin{equation}
+\vec{\varOmega}=\frac{\mu_0 Q^2R^2}{40\uppi Md^3}\lvert\left(3(\vec{\omega}_1\cdot\hat{r})\hat{r}-\vec{\omega}_1\right)\rvert\eqtagscore{20}{3}
+\end{equation}
+注：说明了\(\vec{\omega}_2\)绕固定轴进动，并给出进动轴方向、进动角速度即可得分。
+
+\solsubsubq{3.4}{13}
+和式\ref{3}对称地有：
+\begin{equation}
+	\vec{\tau}_1=\vec{\omega}_1\times\frac{\mu_0 Q^2R^4}{100\uppi  d^3}\left(3(\vec{\omega}_2\cdot\hat{r})\hat{r}-\vec{\omega}_2\right),\ \frac{\mathrm{d}\vec{\omega}_1}{\mathrm{d}t}=\vec{\omega}_1\times\frac{\mu_0 Q^2R^2}{40\uppi M d^3}\left(3(\vec{\omega}_2\cdot\hat{r})\hat{r}-\vec{\omega}_2\right)\eqtagscore{21}{3}\label{4}
+\end{equation}
+
+球\(2\)受球\(1\)的作用力：
+\begin{equation}
+	\vec{F}_{2}(d)=\nabla(\vec{m}_2\cdot\vec{B}_{m_1})=\frac{3\mu_0 Q^2R^4}{100\uppi d^4}\left[(\vec{\omega}_1\cdot\vec{\omega_2})\hat{r}+(\vec{\omega}_1\cdot\hat{r})\vec{\omega}_2+(\vec{\omega}_2\cdot\hat{r})\vec{\omega}_1-5(\vec{\omega}_1\cdot\hat{r})(\vec{\omega}_2\cdot\hat{r})\hat{r}\right]\eqtagscore{22}{4}
+\end{equation}
+
+为了将球\(2\)的位置固定，球\(2\)将会受到一个大小相同，方向相反的约束力作用。以球\(1\)球心为参考点，系统受到的总力矩：
+\begin{equation}
+	\frac{\mathrm{d}\vec{L}_\text{tot}}{\mathrm{d}t}=\vec{\tau}_\text{tot}=\vec{\tau}_1+\vec{\tau}_2-d\hat{r}\times\vec{F}_2=0\eqtagscore{23}{2}
+\end{equation}
+
+因此总角动量守恒。
+
+由式\ref{3}和\ref{4}可知：
+\begin{equation}
+	\frac{\mathrm{d}(\vec{\omega}_1\cdot\vec{\omega}_2)}{\mathrm{d}t}=\frac{\mathrm{d}((\vec{\omega}_1+\vec{\omega}_2)\cdot\hat{r})}{\mathrm{d}t}=\frac{\mathrm{d}\omega_1^2}{\mathrm{d}t}=\frac{\mathrm{d}\omega_2^2}{\mathrm{d}t}=0\eqtagscore{24}{2}
+\end{equation}
+
+
+系统的动能为:
+\begin{equation}
+	E_k=\frac{MR^2}{5}(\omega_1^2+\omega_2^2)\eqtagscore{25}{1}
+\end{equation}
+
+势能由式\ref{5}给出，从而：
+\begin{equation}
+	\frac{\mathrm{d}(E_k+U)}{\mathrm{d}t}=0\eqtagscore{26}{1}
+\end{equation}
+
+因此总能量守恒。
+
+\scoring  % 评分标准自动使用题目环境中声明的总分
+\end{solution}
+
+\end{problem}
+
+\end{document}

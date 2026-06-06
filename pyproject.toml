@@ -11,10 +11,14 @@ dependencies = [
     "python-dotenv>=1.0.1,<2",
     "pyyaml>=6.0.1,<7",
     "matplotlib>=3.8.0,<4",
+    "fastapi>=0.111.0,<1",
+    "uvicorn[standard]>=0.30.0,<1",
+    "python-multipart>=0.0.9,<1",
 ]
 
 [project.scripts]
 ai-scoring = "src.app:main"
+ai-scoring-api = "src.api.server:main"
 
 [build-system]
 requires = ["hatchling"]

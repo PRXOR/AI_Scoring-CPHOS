@@ -212,6 +212,56 @@ uv run ai-scoring direct --input-dir ./images --standard answer.tex -o ./output/
 
 ---
 
+## Web API（前端接入）
+
+除 CLI 外，系统提供 FastAPI HTTP 服务，供现代化前端（`cphos-scoring-frontend`，React + Ant Design）调用。
+
+```bash
+uv sync                  # 安装含 fastapi/uvicorn 的依赖
+uv run ai-scoring-api    # 启动 http://127.0.0.1:8000
+# 或：uv run uvicorn src.api.server:app --reload
+```
+
+可用 `API_HOST` / `API_PORT` 环境变量自定义监听地址与端口。
+
+| 方法 | 路径 | 说明 |
+|:---|:---|:---|
+| `GET` | `/api/health` | 健康检查 + 当前模型配置 |
+| `POST` | `/api/recognize` | 上传图片 → VLM 转录（`TranscriptionResult`） |
+| `POST` | `/api/rubric` | 上传 `.tex` → 解析评分标准（`ScoringRubric`） |
+| `POST` | `/api/judge` | 上传学生 `.md` + 标准 `.tex` → 评分（`JudgingResult`） |
+| `POST` | `/api/direct` | 上传图片 + 标准 `.tex` → 一步评分（`JudgingResult`） |
+| `POST` | `/api/direct/batch` | 上传多张图片 + 标准 `.tex` → 批量评分汇总 |
+
+接口返回的 JSON 由 `judge/types.py`、`model/types.py` 中的 dataclass 经 `dataclasses.asdict` 序列化得到。交互式文档见 `http://127.0.0.1:8000/docs`。
+
+### 实战阅卷接口（基于 `data/` 目录）
+
+直接读取 `data/<exam>/` 真实考试数据，无需上传文件即可从前端发起阅卷。数据根可用环境变量 `DATA_ROOT` 覆盖（默认仓库根的 `data/`）。
+
+| 方法 | 路径 | 说明 |
+|:---|:---|:---|
+| `GET` | `/api/exams` | 列出所有考试（题数 / 学生数） |
+| `GET` | `/api/exams/{exam}` | 考试详情：题目列表 + 学生列表 |
+| `GET` | `/api/exams/{exam}/papers/{paper}/rubric` | 解析某题的评分标准 |
+| `GET` | `/api/exams/{exam}/students/{student}/images/{image}` | 获取学生答卷图片 |
+| `POST` | `/api/exams/{exam}/grade` | 对单个学生的单题 direct 评分 |
+| `POST` | `/api/exams/{exam}/grade/batch` | 对一道题批量评分（可指定学生） |
+
+**`data/` 目录约定：**
+
+```
+data/<exam>/
+├── paper/<id>/<name>.tex        # 标准答案；文件夹名数字 = 覆盖的题号
+│                                #   如 23/orbit.tex 表示第2、3题（一题两图）
+├── student_answers/序号_总分_姓名/第N题.jpg
+└── grading_results/             # 评分结果自动输出（<student>/<paper>_direct.md）
+```
+
+评分结果写入 `data/<exam>/grading_results/<student>/<paper>_direct.md`。
+
+---
+
 ## 配置
 
 通过 `.env` 文件或环境变量配置：

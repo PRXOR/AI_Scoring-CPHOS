@@ -1,0 +1,188 @@
+{
+  "total_score": 38,
+  "max_score": 49,
+  "item_scores": [
+    {
+      "item_id": "1",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "正确写出了LC电路经典哈密顿量。"
+    },
+    {
+      "item_id": "2",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "采取了等价的不同推导路径，未显式反解该算符且中间计算省略较多。"
+    },
+    {
+      "item_id": "3",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "未写出该算符的表达式。"
+    },
+    {
+      "item_id": "4",
+      "item_type": "equation",
+      "score": 4,
+      "max_score": 4,
+      "reasoning": "通过对易子关系直接正确得出了两常数的乘积结果。"
+    },
+    {
+      "item_id": "6",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "跳过了单列参数表达式的步骤且推导过程中有系数错漏，未予给分。"
+    },
+    {
+      "item_id": "7",
+      "item_type": "equation",
+      "score": 4,
+      "max_score": 4,
+      "reasoning": "最终写出的量子化哈密顿量表达式完全正确。"
+    },
+    {
+      "item_id": "8",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "正确写出了能级公式。"
+    },
+    {
+      "item_id": "指出不适合_1",
+      "item_type": "text",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "得出了不合适的正确结论。"
+    },
+    {
+      "item_id": "说明相邻能级差应该不同及原因_1",
+      "item_type": "text",
+      "score": 0,
+      "max_score": 3,
+      "reasoning": "误将原因解释为“应该仅有两个能级”，缺乏对系统能级间隔须不等的正确物理理解。"
+    },
+    {
+      "item_id": "9",
+      "item_type": "equation",
+      "score": 3,
+      "max_score": 3,
+      "reasoning": "正确求积，略去了常数项且对系数进行了准确的等价替换（用普朗克常数等表达）。"
+    },
+    {
+      "item_id": "10",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 1,
+      "reasoning": "正确代入势能项组合出了哈密顿量。"
+    },
+    {
+      "item_id": "11",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "正确将余弦项进行了泰勒展开至四阶。"
+    },
+    {
+      "item_id": "解释适合作为量子比特的原因_1",
+      "item_type": "text",
+      "score": 1,
+      "max_score": 2,
+      "reasoning": "指出了四阶项是关键，但未能清晰论述非谐性导致的能级差减小这层物理意义，部分给分。"
+    },
+    {
+      "item_id": "13",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "正确给出了参数限度条件。"
+    },
+    {
+      "item_id": "12",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "非谐性参数计算正确。"
+    },
+    {
+      "item_id": "说明原因_1",
+      "item_type": "text",
+      "score": 1,
+      "max_score": 1,
+      "reasoning": "明确指出了“不可以无穷大”，且附带说明了其对能级精度的负面影响，获得该项满分。"
+    },
+    {
+      "item_id": "14",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "正确给出了c1导数等式，数学上虽含1/i但完全等价。"
+    },
+    {
+      "item_id": "15",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "正确给出了c2导数等式。"
+    },
+    {
+      "item_id": "16",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "未写出余弦展开的中间步骤。"
+    },
+    {
+      "item_id": "18",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "直接写出了正确的共振频率。"
+    },
+    {
+      "item_id": "19",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 1,
+      "reasoning": "显式说明“在平均意义下”并得出正确结果。"
+    },
+    {
+      "item_id": "20",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 1,
+      "reasoning": "平均方程推导结果完全一致。"
+    },
+    {
+      "item_id": "21",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "构造了等效的二阶微分方程确定了演化周期，等价抓住了拉比振荡频率的核心，方法正确。"
+    },
+    {
+      "item_id": "22",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "利用微分方程正确推得翻转所需时间。"
+    }
+  ],
+  "student_source": "第6题.jpg",
+  "standard_source": "qubit_preparation.tex",
+  "model": "google/gemini-3.1-pro-preview",
+  "provider": "openrouter",
+  "usage": {
+    "prompt_tokens": 6930,
+    "completion_tokens": 14356,
+    "total_tokens": 21286,
+    "generation_id": "gen-1780740055-aRGfljaN72j7J2jH3ICE"
+  },
+  "problem_title": "量子比特的制备",
+  "submitted_at": "2026-06-06T10:00:54Z",
+  "completed_at": "2026-06-06T10:03:28Z",
+  "duration_seconds": 154.02
+}

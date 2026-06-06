@@ -1,0 +1,209 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  Project: CPHOS LaTeX Template
+%%  File: example-problem.tex
+%%  Copyright © 2026 gameswu & CPHOS (www.cphos.cn)
+%%
+%%  Permission is hereby granted, free of charge, to any person obtaining a 
+%%  copy of this software and associated documentation files (the "Software"), 
+%%  to deal in the Software without restriction, including without limitation 
+%%  the rights to use, copy, modify, merge, publish, distribute, sublicense, 
+%%  and/or sell copies of the Software, and to permit persons to whom the 
+%%  Software is furnished to do so, subject to the following conditions:
+%%
+%%  The above copyright notice and this permission notice shall be included 
+%%  in all copies or substantial portions of the Software.
+%%
+%%  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS 
+%%  OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+%%  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL 
+%%  THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+%%  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
+%%  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
+%%  DEALINGS IN THE SOFTWARE.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% CPHOS理论命题模板
+
+\documentclass[answer]{cphos}
+
+% === 设置文档信息 ===
+\cphostitle{CPHOS物理竞赛联考}
+\cphossubtitle{理论试题命题模板}
+
+\setscorecheck{true}  % 启用分值检查，可设为false关闭
+
+\begin{document}
+\begin{problem}[40]{潘宁阱} 
+
+% === 题干 ===
+\begin{problemstatement}
+潘宁阱是一种利用均匀磁场和四极电场来囚禁带电粒子的装置。它就像一个精准的“粒子牢笼”，可以长时间稳定地束缚单个离子或电子，是实现高精度测量的关键工具。
+
+在潘宁阱内建立直角坐标系，空间中的电势分布为：
+\begin{equation}
+	U=\frac{U_0}{4d^2} \left(2z^2-x^2-y^2 \right) \eqtag{1}
+\end{equation}
+空间中存在磁场$\vec{B}=B_0\hat{z}$。本题不考虑可能的量子效应。
+
+\subq{1}假设原点处有一个质量为$m$、电荷量大小为$q$的带正电的质点，固定电场不变，求解能使该质点局限在阱内做周期运动的$B_0$的范围。
+
+\subq{2}实际的潘宁阱形成的电磁场不可能完美符合理论，答案只需保留一阶近似项，接下来分别考虑可能的误差：
+
+\subsubq{2.1}考虑八极势带来的扰动，不考虑其它扰动，电势修正为
+\begin{equation}
+	U=\frac{U_0}{4d^2}\left(2z^2-x^2-y^2\right)+\frac{U_0}{2d^4}C\left[z^4-3z^2\left(x^2+y^2\right)+\frac{3}{8}\left(x^2+y^2\right)^2\right] \eqtag{2}
+\end{equation}
+其中$C\ll1$。已知粒子$z$方向运动振幅为$A$，求解粒子$z$方向运动基频相对变化量$\frac{\Delta \omega_z}{\omega_z}$，已知轴向运动主要受 
+$\Delta U$中的$z^4$项影响（径向耦合项在时间平均后贡献很小，且频率不匹配）。
+
+\subsubq{2.2}进一步考虑小量轴向阻尼力$-\gamma_z \dot{z}$，并施加一个正弦驱动力$\vec{F}=F_0\sin \left(\omega t+\theta\right) \hat{z}$进行驱动频率扫描，求解振幅关于频率的响应曲线在$\omega=\sqrt{\frac{U_0 q}{md^2}}$附近出现三值区间（即在此频率区间内，对应同一频率有三个不同的振幅解）的驱动力下界。
+
+\subsubq{2.3}潘宁阱中粒子运动速率远小于光速，但当进行驱动频率扫描时，相对论效应会对振幅关于频率的响应曲线产生影响。此时粒子在阱中做圆周运动，驱动微波电场是右旋的圆极化波，频率为 $\omega$，振幅 $\mathcal{E}_0$，$\vec{\mathcal{E}}\left(t\right) = \mathcal{E}_0 \left(\hat{x}\cos\omega t - \hat{y}\sin\omega t \right)$，存在阻力$- \gamma_c \vec{v}$，求解频率$\omega$和运动动量大小$u$满足的关系，并说明保留适当的阶数时是否可能出现三值区间。简单起见，忽略空间电势的作用和粒子 $z$ 方向的运动。
+
+
+
+\end{problemstatement}
+
+% === 解答 ===
+\begin{solution}
+
+\solsubq{1}{10}
+带电粒子在电磁场中的受力：
+\begin{equation}
+	\vec{F} = -q\nabla U -q\dot{x}B_0\hat{y}+q\dot{y}B_0\hat{x}\eqtagscore{1}{1} 
+\end{equation}
+先考虑$z$方向受力
+\begin{equation}
+	F_z=-\frac{U_0 q}{d^2} \eqtagscore{2}{2} z
+\end{equation}
+$z$ 方向被约束于阱内。考虑 $x$，$y$ 方向，设 $u=x+\mathrm{i} y$ ：
+\begin{equation}
+	m\ddot{u} = \frac{U_0 q}{2d^2}u-\mathrm{i} qB_0 \dot{u}\eqtagscore{3}{2} 
+\end{equation}
+令$u=A\mathrm{e}^{-\mathrm{i} \omega t}$：
+\begin{equation}
+	\omega^2-\frac{ q B_0}{m} \omega+ \frac{U_0 q}{2md^2} =0 \eqtagscore{4}{2}
+\end{equation}
+要求判别式大于$0$：
+\begin{equation}
+	B_0>\sqrt{\frac{2U_0 m}{qd^2}}\eqtagscore{5}{3}
+\end{equation}
+
+\solsubq{2}{30}
+\solsubsubq{2.1}{6}
+依题意写出略去径向影响的轴向运动方程：
+\begin{equation}
+	m\ddot{z}=-\frac{U_0 q}{d^2}z-\frac{2U_0 qC}{d^4}z^{3}\eqtagscore{6}{2}\label{eq:2.1}
+\end{equation}
+设 $z=A\sin \left(\omega_z t+\phi\right)$，代入式\ref{eq:2.1}并作小量近似：
+\begin{equation}
+	\omega_0=\sqrt{\frac{U_0q}{md^2}},\ \omega_z=\omega_0(1+\lambda C)\eqtag{7}
+\end{equation}
+利用三倍角公式化简，只保留一倍频：
+\begin{equation}
+	-\frac{U_0q}{d^2}(1+2\lambda C)A\sin(\omega_zt+\phi)=-\frac{U_0q}{d^2}A\sin(\omega_zt+\phi)-\frac{2U_0qC}{d^4}A^3\cdot\frac34\sin(\omega_zt+\phi)\eqtag{8}
+\end{equation}
+化简解得：
+\begin{equation}
+	\lambda=\dfrac{3A^2}{4d^2},\ \omega_z=\sqrt{\frac{U_0 q}{md^2}}\left(1+\frac{3CA^2}{4d^2}\right)\eqtagscore{9}{3}
+\end{equation}
+最终结果：
+\begin{equation}
+	\frac{\Delta \omega_z}{\omega_z} = \frac{3CA^2}{4d^2} \eqtagscore{10}{1}
+\end{equation}
+
+\solsubsubq{2.2}{12}
+轴向运动方程：
+\begin{equation}
+	m\ddot{z}+\gamma_z \dot{z}+\frac{U_0 q}{d^2}z+\frac{2U_0 qC}{d^4}z^{3}=F_0\sin \left(\omega t+\theta\right) \eqtagscore{11}{2}\label{eq:2.2}
+\end{equation}
+将$z=A\sin \left(\omega t+\phi\right)$代入式\ref{eq:2.2}，利用三倍角公式化简，只保留一倍频：
+\begin{equation}
+	\begin{aligned}
+		F_0\sin \left(\omega t+\theta\right)&=-mA\omega^2\sin \left(\omega t+\phi\right)+\gamma_z A\omega\cos \left(\omega t+\phi\right) \\
+		&\quad +\frac{U_0 q}{d^2}A\sin \left(\omega t+\phi\right)+\frac{2U_0qC}{d^4}A^3\cdot\frac34\sin(\omega t+\phi)
+	\end{aligned} \eqtagscore{12}{1}
+\end{equation}
+取模：
+\begin{equation}
+	\left(\frac{U_0 q}{d^2}-m\omega^2+\frac{3U_0 qCA^2}{2d^4}\right)^2 A^2+\gamma_z ^2 \omega^2 A^2=F_0^2\eqtagscore{13}{1}\label{eq:2.3}
+\end{equation}
+由$\frac{CA^2}{d^2} \ll 1$，将$\omega_z=\sqrt{\frac{U_0 q}{md^2}}\left(1+\frac{3CA^2}{4d^2}\right)$代入式\ref{eq:2.3}化简：
+\begin{equation}
+	\left(m\omega_z^2-m\omega^2\right)^2 A^2+\gamma_z ^2 \omega^2 A^2=F_0^2\eqtag{14}
+\end{equation}
+归一化处理，设 $w=\frac{\gamma_z^2A^2}{F_0^2}\omega_0^2,\ N=\frac{m(\omega_z-\omega_0)}{w\gamma_z},\ \delta=m\frac{\omega-\omega_0}{\gamma_z}$，整理得：
+\begin{equation}
+	\left(\frac{\omega+\omega_z}{\omega_0} \right)^2 \left(Nw-\delta\right)^2 w+ \left(\frac{\omega}{\omega_0} \right)^2 w=1 \eqtagscore{15}{1}
+\end{equation}
+此时 $\frac{\omega_0}{\omega}-1,\ \frac{\omega-\omega_z}{\omega_0}$应为小量，在小量近似下：
+\begin{equation}
+	w=\frac{1}{1+4\left(Nw-\delta\right)^2}\eqtagscore{16}{2} \label{eq:2.4}
+\end{equation}
+$A(\omega)$ 出现三值区间时，等效于 $w(\delta)$ 出现三值区间，因此 $\delta(w)$ 应当有至少一个稳定点，或以下方程应当有解：
+\begin{equation}
+	\frac{\mathrm{d}\delta}{\mathrm{d}w}=0\eqtagscore{17}{1}
+\end{equation}
+由式\ref{eq:2.4}解得$\delta$，计算得到：
+\begin{equation}
+	\delta=Nw \pm \sqrt{\frac{1}{4w}-\frac{1}{4}}\eqtag{18}\label{eq:2.5}
+\end{equation}
+要使 $\frac{\mathrm{d}\delta}{\mathrm{d}w}=0$ 可能有解，式\ref{eq:2.5}取$+$。
+对式\ref{eq:2.5}两边求导：
+\begin{equation}
+	\frac{\mathrm{d}\delta}{\mathrm{d}w}=N-\frac{1}{4w^2\sqrt{\frac{1}{w}-1}}\eqtag{19}\label{eq:2.6}
+\end{equation}
+将 $\frac{\mathrm{d}\delta}{\mathrm{d}w}=0$ 代入式\ref{eq:2.6}，得到：
+\begin{equation}
+	N\geqslant\min\limits_{0<w<1}\frac{1}{4w^2\sqrt{\frac{1}{w}-1}}\eqtagscore{20}{1}
+\end{equation}
+右边最小值求得：
+\begin{equation}
+	N_{\min}=\frac{4\sqrt{3}}{9}\eqtagscore{21}{1}
+\end{equation}
+
+频率关于振幅的响应曲线出现三值区间的临界驱动力大小：
+\begin{equation}
+	F_0=\sqrt{\frac{16\sqrt{3}d\gamma_z^3}{27mC}\sqrt{\frac{U_0 q}{m}}}\eqtagscore{22}{2}
+\end{equation}
+
+\solsubsubq{2.3}{12}
+相对论下运动方程：
+\begin{equation}
+	\frac{\mathrm{d}}{\mathrm{d}t}\left( \frac{\vec{v}}{\sqrt{1-\frac{|\vec{v}|^2}{c^2}}} \right) = -\frac{B_0 q}{m} \hat{z}\times\vec{v} - \frac{\gamma_c}{m} \vec{v} + \frac{q}{m}\vec{{\mathcal{E}}}\left(t\right)\eqtagscore{23}{2}
+\end{equation}
+用复数 $v=v_x+\mathrm{i}v_y$ 表示：
+\begin{equation}
+	\frac{\mathrm{d}}{\mathrm{d}t}\left( \frac{v}{\sqrt{1-\frac{|v|^2}{c^2}}} \right) =-\mathrm{i} \frac{B_0 q}{m} v - \frac{\gamma_c}{m} v + \frac{q}{m}\mathcal{E}_0 \mathrm{e}^{-\mathrm{i}\omega t}\eqtagscore{24}{2}
+\end{equation}
+
+引入旋转坐标系下的复动量 $u_c \mathrm{e}^{-\mathrm{i}\omega t} = \frac{mv}{\sqrt{1-\frac{|v|^2}{c^2}}}$，化简：
+\begin{equation}
+	\dot{u}_c - \mathrm{i}\left(\omega - \frac{B_0 q}{m\sqrt{1+\frac{|u_c|^2}{m^2c^2}}}\right) u_c + \frac{\gamma_c}{m\sqrt{1+\frac{|u_c|^2}{m^2c^2}}} u_c = q\mathcal{E}_0\eqtagscore{25}{3}
+\end{equation}
+
+稳定时 $\dot{u}_c=0$，取模：
+\begin{equation}
+	\left(\omega - \frac{B_0 q}{m\sqrt{1+\frac{u^2}{m^2c^2}}}\right) ^2 u^2 + \frac{\gamma_c ^2}{m^2\left(1+\frac{u^2}{m^2c^2}\right)} u^2 = q^2 \mathcal{E}_0 ^2\eqtagscore{26}{2}
+\end{equation}
+展开到一阶即有
+\begin{equation}
+	\left[\omega\left(1+\frac{u^2}{2m^2c^2}\right) - \frac{B_0 q}{m}\right] ^2 u^2 + \left(\frac{\gamma_c ^2}{m^2}-\frac{q^2\mathcal{E}_0^2}{m^2c^2}\right) u^2 = q^2 \mathcal{E}_0 ^2\eqtagscore{27}{1}
+\end{equation}
+与式\ref{eq:2.3}形式相似，可能出现三值区间。
+\addtext{说明可能存在三值区间}{2}
+
+注：若不忽略静电力，将得到
+\begin{equation}
+	\left[\omega\left(1+\frac{u^2}{2m^2c^2}\right) - \left(\frac{qU_0}{2d^2m\omega}+\frac{B_0 q}{m}\right)\right] ^2 u^2 + \left(\frac{\gamma_c ^2}{m^2}-\frac{q^2\mathcal{E}_0^2}{m^2c^2}\right) u^2 = q^2 \mathcal{E}_0 ^2\eqtag{28}
+\end{equation}
+也算作正确。
+
+
+
+\scoring  % 评分标准自动使用题目环境中声明的总分
+\end{solution}
+	
+\end{problem}
+
+\end{document}

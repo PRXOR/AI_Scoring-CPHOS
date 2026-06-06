@@ -1,0 +1,181 @@
+{
+  "total_score": 32,
+  "max_score": 40,
+  "item_scores": [
+    {
+      "item_id": "1",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 1,
+      "reasoning": "给出了等价的三个坐标分量方向的受力方程，符合题意。"
+    },
+    {
+      "item_id": "2",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "成功写出 z 方向的正确运动方程（式3）。"
+    },
+    {
+      "item_id": "3",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "虽未显式定义复变量 u，但使用了 x, y 分量的谐振代换方法，成功构建了等价的特征系统。"
+    },
+    {
+      "item_id": "4",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 2,
+      "reasoning": "写出了特征方程（式7），但常数项符号存在笔误。"
+    },
+    {
+      "item_id": "5",
+      "item_type": "equation",
+      "score": 3,
+      "max_score": 3,
+      "reasoning": "基于正确的判别式逻辑给出了完全正确的 B_0 范围（式8）。"
+    },
+    {
+      "item_id": "6",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "写出了正确包含八极势修正的 z 方向运动方程（式9）。"
+    },
+    {
+      "item_id": "9",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 3,
+      "reasoning": "未显式写出频率 w_z 表达式，但直接基于共振项求得了等价的修正关系，依据跳步规则给部分分。"
+    },
+    {
+      "item_id": "10",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 1,
+      "reasoning": "正确得出了基频相对变化量（式13）。"
+    },
+    {
+      "item_id": "11",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "给出了正确的轴向受迫振动方程（式14，带阻尼和非线性项）。"
+    },
+    {
+      "item_id": "12",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "跳过了谐波平衡法的中间化简步骤。"
+    },
+    {
+      "item_id": "13",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 1,
+      "reasoning": "正确写出了关于振幅 A 的响应幅值方程（式15）。"
+    },
+    {
+      "item_id": "15",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "跳过了通过 w, N, \\delta 归一化的小量近似标准化过程。"
+    },
+    {
+      "item_id": "16",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "给出了与标准无量纲多项式等价的有量纲幅值多项式方程（式17及以后）。"
+    },
+    {
+      "item_id": "17",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 1,
+      "reasoning": "通过文字“考虑导数=0，判别式为0”指出了产生三值区间（稳定点）的临界物理条件。"
+    },
+    {
+      "item_id": "20",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "跳过了参数 N 极小值的中间推导式。"
+    },
+    {
+      "item_id": "21",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 1,
+      "reasoning": "间接完成阈值极值求解，依据跳步追溯规则给部分分。"
+    },
+    {
+      "item_id": "22",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "得出了含有正确特征系数（16√3/27）的最终临界驱动力 F_0 表达式（式19）。"
+    },
+    {
+      "item_id": "23",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "给出了动量形式的相对论受力方程（式20）。"
+    },
+    {
+      "item_id": "24",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 2,
+      "reasoning": "跨过了复数微分表示，直接推出稳态幅值方程，给跳步部分分。"
+    },
+    {
+      "item_id": "25",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 3,
+      "reasoning": "未显式写出旋转坐标系复动量方程，基于最终方程倒推其掌握核心物理，给部分分。"
+    },
+    {
+      "item_id": "26",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "完美导出了正确的包含相对论因子的稳态幅值展开前方程（式23）。"
+    },
+    {
+      "item_id": "27",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 1,
+      "reasoning": "对其进行了一阶展开，给出了等价的近似解析式（式25），尽管未作最终频移代换，但在物理和数学上等价。"
+    },
+    {
+      "item_id": "说明可能存在三值区间_1",
+      "item_type": "text",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "明确指出存在 u^2 的三次方项，故可产生三值区间，物理解释完全正确。"
+    }
+  ],
+  "student_source": "第1题.jpg",
+  "standard_source": "penning_trap.tex",
+  "model": "google/gemini-3.1-pro-preview",
+  "provider": "openrouter",
+  "usage": {
+    "prompt_tokens": 7240,
+    "completion_tokens": 13792,
+    "total_tokens": 21032,
+    "generation_id": "gen-1780739715-s0AdaAFhbYOrYbJeVras"
+  },
+  "problem_title": "潘宁阱",
+  "submitted_at": "2026-06-06T09:44:00Z",
+  "completed_at": "2026-06-06T09:57:46Z",
+  "duration_seconds": 825.57
+}

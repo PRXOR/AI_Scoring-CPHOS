@@ -1,0 +1,354 @@
+\documentclass[answer]{cphos}
+
+\cphostitle{CPHOS物理竞赛联考}
+\cphossubtitle{理论试题命题模板}
+
+\setscorecheck{true}  % 启用后，如果声明分值与实际分值不符会显示红色警告
+
+\begin{document}
+
+\begin{problem}[50]{双折射晶体}
+
+\usetikzlibrary{arrows.meta, angles, quotes}
+
+\begin{problemstatement}
+
+本题中我们将研究一种双折射晶体，其双折射率分别为 $n_o=\sqrt{\varepsilon_1}$、$n_e=\sqrt{\varepsilon_2}$。本题假设光线都在 $xOz$ 平面内传播，忽略介质磁导率的影响。
+
+\subq{1} 已知在线性介质中电位移矢量 $\vec D$ 与电场强度 $\vec E$ 的关系为 $\vec D={}\!\stackrel{\text{\fontsize{3}{1}$\rightarrow\rightarrow$}}{\varepsilon_r}\!\varepsilon_0\cdot\vec E$，设光轴方向为 $\hat z$，求这种晶体的相对介电张量 ${}\!\stackrel{\text{\fontsize{3}{1}$\rightarrow\rightarrow$}}{\varepsilon_r}$。
+
+\subq{2} 假设一列线偏振平面波在晶体中传播，其波矢为 $\vec k$，圆频率为 $\omega$，根据麦克斯韦方程组
+
+\begin{equation}
+    \begin{cases}
+        \nabla\cdot\vec D=0\\
+        \nabla\times\vec E=-\dfrac{\partial\vec B}{\partial t}\\[0.7em]
+        \nabla\cdot\vec B=0\\
+        \nabla\times\vec B=\mu_0\dfrac{\partial\vec D}{\partial t}
+    \end{cases} \eqtag{1}
+\end{equation}
+求解：
+
+\subsubq{2.1} 将光轴方向取为 $\hat z$，求电场强度 $\vec E$ 满足的\textbf{线性}方程，用 $\varepsilon_{1,2},\hat z,c,\vec k,\omega$ 与 $\vec E$ 表示；
+
+\subsubq{2.2} 继\subsubq{2.1}，设 $\hat k=\hat z\cos\theta+\hat x\sin\theta$。注意到双折射介质中相速度与群速度不再相同，因此折射率也分为相折射率和群折射率。求出这列平面波可能对应的的相折射率 $n$。
+
+\subsubq{2.3} 对\subsubq{2.2}中求出的每种情况分别求解 $\vec D,\vec E$（可保留常系数，不计相位），并求出这列平面波传播的方向与光轴的夹角 $\phi$。
+
+\subq{3} 本问中我们将讨论光线从双折射晶体出射到各向同性介质时的行为。简化起见，我们认为光轴在入射面内，并且在表达式中使用 $n_o,n_e$ 代替 $\varepsilon_{1,2}$。取界面法向（朝向晶体一侧）为 $\hat z$，设光轴方向为 $\hat x\sin\alpha+\hat z\cos\alpha$，入射光方向为 $\hat x\sin i-\hat z\cos i$，反射光方向为 $\hat x\sin r+\hat z\cos r$。
+\begin{figure}[H]
+    \centering
+    \begin{tikzpicture}[>=Stealth, line width=0.8pt]
+        \coordinate (O) at (0,0);
+        \coordinate (L) at (-180:3);
+        \coordinate (R) at (0:3);
+        \coordinate (T_normal) at (90:2.6);
+        \coordinate (B_normal) at (-90:2.6); 
+        
+        \coordinate (Incident) at (135:2.2); 
+        \coordinate (BlackRay) at (75:2.2);
+        \coordinate (Reflected) at (30:2.2);
+        \coordinate (Refracted) at (-60:2.2);
+        \fill[fill=purple!30, fill opacity=0.5] (O) -- (L) arc (180:0:3cm) -- cycle;
+        \draw (L) -- (R);
+        \draw[dashed] (B_normal) -- (T_normal);
+        \draw[red] (Incident) -- (O);
+        \draw[->] (O) -- (BlackRay);
+        \draw[red] (O) -- (Reflected);
+        \draw[red] (O) -- (Refracted);
+        \pic [draw, "$i$", angle radius=0.6cm, angle eccentricity=1.3] {angle = T_normal--O--Incident};
+        \pic [draw, "$\alpha$", angle radius=0.9cm, angle eccentricity=1.3] {angle = BlackRay--O--T_normal};
+        \pic [draw, "$r$", angle radius=0.7cm, angle eccentricity=1.2] {angle = Reflected--O--T_normal};
+        \pic [draw, "$t$", angle radius=0.7cm, angle eccentricity=1.4] {angle = B_normal--O--Refracted};
+        \node at (2,0.4) {$n_o, n_e$};
+        \node at (2,-0.4) {$n$};
+    \end{tikzpicture}
+    \caption{双折射晶体入射出射光示意图}
+    \label{fig:1}
+\end{figure}
+
+\subsubq{3.1} 若入射光偏振方向在入射面内，试用 $\tan i,\tan\alpha,n_o,n_e$ 表示 $\tan r$。
+
+\noindent 提示：计算 $\tan r-\tan i$。
+
+\subsubq{3.2} 设各向同性介质折射率为 $n$，试求出射角 $t$ 与光强反射率 $R$。$R$ 的结果可保留 $r,t$。
+
+\end{problemstatement}
+
+\begin{solution}
+
+\solsubq{1}{3} 由于忽略磁化，折射率与相对介电常数的关系为 $n=\sqrt{\varepsilon_r\mu_r}=\sqrt{\varepsilon_r}$。因此
+
+\begin{equation}
+    \varepsilon_x=\varepsilon_y=n_o^2=\varepsilon_1,\ \varepsilon_z=n_e^2=\varepsilon_2\ \Rightarrow{}\stackrel{\text{\fontsize{3}{1}$\rightarrow\rightarrow$}}{\varepsilon_r}\!{}=\begin{bmatrix}
+        \varepsilon_1 & 0 & 0 \\
+        0 & \varepsilon_1 & 0 \\
+        0 & 0 &\varepsilon_2
+    \end{bmatrix}\eqtagscore{1}{3}
+\end{equation}
+
+\solsubq{2}{24}
+\solsubsubq{2.1}{8} 将平面波代换 $\nabla\rightarrow \mathrm{i}\vec k$ 代入麦克斯韦方程组：
+\begin{equation}
+    \begin{cases}
+        \mathrm i\vec k\cdot\vec D=0\\
+        \mathrm i\vec k\times\vec E=\mathrm i\omega\vec B\\
+        \mathrm i\vec k\cdot\vec B=0\\
+        \mathrm i\vec k\times\vec H=-\mathrm i\omega\vec D
+    \end{cases}\eqtagscore{2}{4}\label{eq:2}
+\end{equation}
+\begin{equation}
+    \Rightarrow\vec B=\dfrac{\vec k}{\omega}\times\vec E,\quad \dfrac{\vec k\times(\vec k\times\vec E)}{\mu_0\omega^2}=-\vec D\eqtagscore{3}{2}\label{eq:3}
+\end{equation}
+代入电位移矢量与电场强度的关系并利用 $\mu_0\varepsilon_0=\dfrac1{c^2}$：
+\begin{equation}
+    \dfrac{c^2}{\omega^2}\vec k\times(\vec k\times\vec E)=-{}\!\stackrel{\text{\fontsize{3}{1}$\rightarrow\rightarrow$}}{\varepsilon_r}\!{}\cdot\vec E\quad\text{or}\quad\dfrac{c^2}{\omega^2}\vec k\times(\vec k\times\vec E)+\varepsilon_1\vec E+(\varepsilon_2-\varepsilon_1)(\hat z\cdot\vec E)\hat z=0\eqtagscore{4}{2}
+\end{equation}
+\solsubsubq{2.2}{11} 将折射率的定义 $\dfrac{\omega}{k}=\dfrac cn$ 代入\ref{eq:3}式：
+\begin{equation}
+    \dfrac{n^2}{k^2}\left[ \left( \vec k\cdot\vec E \right)\vec k-k^2\vec E \right]+{}\!\stackrel{\text{\fontsize{3}{1}$\rightarrow\rightarrow$}}{\varepsilon_r}\!{}\cdot\vec E=0\eqtagscore{5}{1}\label{eq:5}
+\end{equation}
+\begin{multisol}[解法]
+    \item
+将\ref{eq:5}式重写为 $\mathcal M_{ij}E_j=0$ 的形式：
+\begin{equation}
+    n^2(k_ik_jE_j-k^2\delta_{ij}E_j)+\varepsilon_{ij}k^2E_j=0\ \Rightarrow\ \det(n^2(k_ik_j-k^2\delta_{ij})+\varepsilon_{ij}k^2)=0\eqtagscore{6}{2}
+\end{equation}
+\begin{equation}
+    n^2(k_ik_j-k^2\delta_{ij})+\varepsilon_{ij}=\begin{bmatrix}
+        n^2(k_x^2-k^2)+\varepsilon_1k^2 & n^2k_xk_y & n^2k_xk_z \\
+        n^2k_xk_y & n^2(k_y^2-k^2)+\varepsilon_1k^2 & n^2k_yk_z \\
+        n^2k_xk_z & n^2k_yk_z & n^2(k_z^2-k^2)+\varepsilon_2k^2
+    \end{bmatrix}\eqtagscore{7}{2}
+\end{equation}
+将行列式展开：
+\begin{equation}
+    \det\mathcal M=(n^2-\varepsilon_1)\left[ \left( \left( k_x^2+k_y^2 \right)\varepsilon_1+k_z^2\varepsilon_2 \right)n^2-k^2\varepsilon_1\varepsilon_2 \right]=0\eqtagscore{8}{4}
+\end{equation}
+\begin{equation}
+    \Rightarrow n_1=\sqrt{\varepsilon_1},\ n_2=\sqrt{\dfrac{\varepsilon_1\varepsilon_2}{\varepsilon_1\sin^2\theta+\varepsilon_2\cos^2\theta}}\eqtag{9}
+\end{equation}
+    \item
+将\ref{eq:5}式重写为 $\vec D$ 满足的方程
+\begin{equation}
+    \vec D=\dfrac{n^2}{k^2}\left[ k^2{}\!\stackrel{\text{\fontsize{3}{1}$\rightarrow\rightarrow$}}{\varepsilon_r}\!{}^{-1}\cdot\vec D-\vec k\left( \vec k\cdot\left( {}\!\stackrel{\text{\fontsize{3}{1}$\rightarrow\rightarrow$}}{\varepsilon_r}\!{}^{-1}\cdot\vec D \right)\right) \right]\eqtagscore{6*}{2}
+\end{equation}
+\begin{equation}
+    (\vec I-n^2{}\!\stackrel{\text{\fontsize{3}{1}$\rightarrow\rightarrow$}}{\varepsilon_r}\!{}^{-1})\cdot\vec D=-n^2\dfrac{\vec k\left[ \vec k\cdot\left( {}\!\stackrel{\text{\fontsize{3}{1}$\rightarrow\rightarrow$}}{\varepsilon_r}\!{}^{-1}\cdot\vec D \right) \right]}{k^2}\eqtagscore{7*}{1}
+\end{equation}
+写成分量式并利用\ref{eq:2}式：
+\begin{equation}
+    D_i=\dfrac{-n^2k_i(\vec k\cdot({}\!\stackrel{\text{\fontsize{3}{1}$\rightarrow\rightarrow$}}{\varepsilon_r}\!{}^{-1}\cdot\vec D))}{k^2(1-n^2\varepsilon_i^{-1})},\ \vec k\cdot\vec D=0\ \Rightarrow\ \sum\dfrac{k_i^2}{n^2/\varepsilon_i-1}=0\text{ or }\vec k\cdot({}\!\stackrel{\text{\fontsize{3}{1}$\rightarrow\rightarrow$}}{\varepsilon_r}\!{}^{-1}\cdot\vec D)=0\eqtagscore{8*}{2}
+\end{equation}
+若 $\sum\dfrac{k_i^2}{n^2/\varepsilon_i-1}=0$，代入 $k_x=k\sin\theta,k_z=k\cos\theta$ 得：
+\begin{equation}
+    \dfrac{\varepsilon_1\sin^2\theta}{n^2-\varepsilon_1}+\dfrac{\varepsilon_2\cos^2\theta}{n^2-\varepsilon_2}=0,\ n=\sqrt{\dfrac{\varepsilon_1\varepsilon_2}{\varepsilon_1\sin^2\theta+\varepsilon_2\cos^2\theta}}\eqtagscore{9*}{2}
+\end{equation}
+若 $k\cdot({}\!\stackrel{\text{\fontsize{3}{1}$\rightarrow\rightarrow$}}{\varepsilon_r}\!{}^{-1}\cdot\vec D)=0$，则：
+\begin{equation}
+    (1-n^2{}\!\stackrel{\text{\fontsize{3}{1}$\rightarrow\rightarrow$}}{\varepsilon_r}\!{}^{-1})\cdot\vec D=0,\ \det(1-n^2{}\!\stackrel{\text{\fontsize{3}{1}$\rightarrow\rightarrow$}}{\varepsilon_r}\!{}^{-1})=\left( 1-\frac{n^2}{\varepsilon_1} \right)^2\left( 1-\frac{n^2}{\varepsilon_2} \right)=0\eqtagscore{10*}{1}
+\end{equation}
+若取 $n=\sqrt{\varepsilon_2}$，则 $\vec D//\hat z$，要求 $\vec k\perp\hat z$，此时情况1求出的 $n$ 也为 $\sqrt{\varepsilon_2}$，故此解舍去，最终答案为：
+
+\end{multisol}
+\begin{equation}
+    n_1=\sqrt{\varepsilon_1},n_2=\sqrt{\dfrac{\varepsilon_1\varepsilon_2}{\varepsilon_1\sin^2\theta+\varepsilon_2\cos^2\theta}}\eqtagscore{11}{2}\label{eq:11}
+\end{equation}
+
+\solsubsubq{2.3}{5}
+\begin{equation}
+    \text{case 1}\ \Rightarrow\ D_i=\dfrac{\alpha k_i}{n^2/\varepsilon_i-1}=D_0\left( \dfrac{\hat x}{\sin\theta}-\dfrac{\hat z}{\cos\theta} \right),\ E_i=\dfrac{\beta k_i}{n^2-\varepsilon_i}=E_0\left( \dfrac{\hat x}{\varepsilon_1\sin\theta}-\dfrac{\hat z}{\varepsilon_2\cos\theta} \right)\eqtagscore{12}{2}
+\end{equation}
+光线传播的方向平行于坡印廷矢量 $\vec S$：
+\begin{equation}
+    \vec S=\dfrac{\vec E\times(\vec k\times\vec E)}{\mu_0\omega}=S_0\left( \dfrac{\hat z}{\varepsilon_1\sin\theta}+\dfrac{\hat x}{\varepsilon_2\cos\theta} \right)\eqtagscore{13}{1}
+\end{equation}
+（方向对即可，系数无所谓）即，若设传播方向为 $(\sin\phi,\cos\phi)$，则有
+\begin{equation}
+    \text{case 1}\Rightarrow\phi=\arctan\left(\dfrac{\varepsilon_1}{\varepsilon_2}\tan\theta\right)\eqtagscore{14}{1}
+\end{equation}
+\begin{equation}
+    \text{case 2}\Rightarrow\vec D=D_0\hat y,\vec E=E_0\hat y,\phi=\theta\eqtagscore{15}{1}
+\end{equation}
+可以看出，$\text{case 2}$ 的光线为 $o$ 光。
+
+\solsubq{3}{23}
+\solsubsubq{3.1}{11}
+\begin{multisol}[解法]
+    \item 本问可以利用边界条件爆算。
+\begin{equation}
+    \hat s=(\sin\alpha,\ \cos\alpha),\ \hat t=(\cos\alpha,-\sin\alpha),\ \hat i=(\sin i,-\cos i),\ \hat r=(\sin r,\cos r)\eqtag{16}
+\end{equation}
+\begin{equation}
+    \phi_i=\pi-i-\alpha,\phi_r=r-\alpha\eqtag{17}
+\end{equation}
+\begin{equation}
+    \tan\theta_i=-\dfrac{n_e^2}{n_o^2}\tan(i+\alpha),\ \tan\theta_r=\dfrac{n_e^2}{n_o^2}\tan(r-\alpha)\eqtagscore{18}{2}\label{eq:18}
+\end{equation}
+\begin{equation}
+    \begin{cases}
+        \hat k_i=\hat s\cos\theta_i+\hat t\sin\theta_i=\dfrac{\dfrac{n_e^2}{n_o^2}\tan(i+\alpha)\hat t-\hat s}{\sqrt{1+\left(\dfrac{n_e^2}{n_o^2}\tan(i+\alpha)\right)^2}}\\
+        \hat k_r=\hat s\cos\theta_r+\hat t\sin\theta_r=\dfrac{\dfrac{n_e^2}{n_o^2}\tan(r-\alpha)\hat t+\hat s}{\sqrt{1+\left(\dfrac{n_e^2}{n_o^2}\tan(r-\alpha)\right)^2}}
+    \end{cases}\eqtag{19}
+\end{equation}
+由波矢平行界面的分量连续：
+\begin{equation}
+    \resizebox{0.93\textwidth}{!}{$\sqrt{\dfrac{n_o^2n_e^2}{n_o^2\sin^2\theta_i+n_e^2\cos^2\theta_i}}\dfrac{\dfrac{n_e^2}{n_o^2}\tan(i+\alpha)\cos\alpha-\sin\alpha}{\sqrt{1+\left(\dfrac{n_e^2}{n_o^2}\tan(i+\alpha)\right)^2}}=\sqrt{\dfrac{n_o^2n_e^2}{n_o^2\sin^2\theta_r+n_e^2\cos^2\theta_r}}\dfrac{\dfrac{n_e^2}{n_o^2}\tan(r-\alpha)\cos\alpha+\sin\alpha}{\sqrt{1+\left(\dfrac{n_e^2}{n_o^2}\tan(r-\alpha)\right)^2}}$}\eqtag{20}
+\end{equation}
+代入\ref{eq:18}式并化简：
+\begin{equation}
+    \dfrac{\dfrac{n_e^2}{n_o^2}\tan(i+\alpha)\cos\alpha-\sin\alpha}{\sqrt{\dfrac{n_e^4}{n_o^2}\tan^2(i+\alpha)+n_e^2}}=\dfrac{\dfrac{n_e^2}{n_o^2}\tan(r-\alpha)\cos\alpha+\sin\alpha}{\sqrt{\dfrac{n_e^4}{n_o^2}\tan^2(r-\alpha)+n_e^2}}\eqtag{21}
+\end{equation}
+\begin{equation}
+    \dfrac{n_e^2\tan(i+\alpha)-n_o^2\tan\alpha}{n_e^2\tan(r-\alpha)+n_o^2\tan\alpha}=\sqrt{\dfrac{n_e^2\tan^2(i+\alpha)+n_o^2}{n_e^2\tan^2(r-\alpha)+n_o^2}}\eqtagscore{22}{5}
+\end{equation}
+为了求解这个方程，我们分离变量并引入常数 $K$：
+\begin{equation}
+    K=\dfrac{n_e^2\tan(i+\alpha)-n_o^2\tan\alpha}{\sqrt{n_e^2\tan^2(i+\alpha)+n_o^2}}=\dfrac{n_e^2\tan(r-\alpha)+n_o^2\tan\alpha}{\sqrt{n_e^2\tan^2(r-\alpha)+n_o^2}}\eqtag{23}
+\end{equation}
+可以看出，这可以化简为一个关于 $\tan i$ 或 $\tan r$ 的二次方程，二者的区别仅在于 $\alpha\rightarrow-\alpha$。
+\begin{equation}
+    \begin{cases}
+        A\tan^2i+B\tan i+C=0\\
+        A\tan^2r-B\tan r+C=0
+    \end{cases}
+    \Rightarrow\tan r-\tan i=\dfrac{B}{A}\eqtag{24}
+\end{equation}
+将原方程展开并提取系数（可用求导法）：
+\begin{equation}
+    \resizebox{0.93\textwidth}{!}{$[n_e^2(\tan i+\tan\alpha)-n_o^2\tan\alpha(1-\tan i\tan\alpha)]^2=K^2[n_e^2(\tan i+\tan\alpha)^2+n_o^2(1-\tan i\tan\alpha)^2]$}\eqtag{25}
+\end{equation}
+\begin{equation}
+    B=2(n_e^2-n_o^2)\tan\alpha(n_e^2+n_o^2\tan^2\alpha-K^2),\ A=(n_e^2+n_o^2\tan^2\alpha)(n_e^2+n_o^2\tan^2\alpha-K^2)\eqtag{26}
+\end{equation}
+因此有一个漂亮的关系，即
+\begin{equation}
+    \dfrac BA=\dfrac{2(n_e^2-n_o^2)\tan\alpha}{n_e^2+n_o^2\tan^2\alpha}\eqtag{27}
+\end{equation}
+与 $K$ 无关，最终得到
+\begin{equation}
+    \tan r=\tan i+\dfrac{2(n_e^2-n_o^2)\tan\alpha}{n_e^2+n_o^2\tan^2\alpha}\eqtagscore{28}{4}
+\end{equation}
+    \item 本问也可以有更优雅的解法。写出波矢椭球方程
+\begin{equation}
+    k_0^2=\dfrac{k_{/\!/}^2}{n_o^2}+\dfrac{k_{\perp}^2}{n_e^2},\ k_{/\!/}=k_x\sin\alpha+k_y\cos\alpha,\ k_{\perp}=k_x\cos\alpha-k_y\sin\alpha\eqtag{16*}
+\end{equation}
+化为 $Ak_x^2+Bk_xk_y+Ck_y^2=k_0^2$ 的形式，结合边界上 $k_x$ 连续，注意到这个方程对给定 $k_x$ 的两个解就是入射光与反射光的 $k_y$，因此根据韦达定理：
+\begin{equation}
+    k_{yi}+k_{yr}=-\dfrac{B}{C}k_x\eqtagscore{17*}{2}
+\end{equation}
+根据光线传播速度 $\vec v_g=c\nabla_{\boldsymbol k}k_0$：
+\begin{equation}
+    \vec v_g=\dfrac{c}{2k_0}\nabla_{\boldsymbol k}(Ak_x^2+Bk_xk_y+Ck_y^2)=\dfrac{c}{2k_0}(2Ak_x+Bk_y,2Ck_y+Bk_x)\eqtag{18*}
+\end{equation}
+运用我们强大的注意力，计算 $v_{iy}+v_{ry}$：
+\begin{equation}
+    v_{iy}+v_{ry}=\dfrac{c}{2k_0}(2C(k_{yi}+k_{yr})+2Bk_x)=0\eqtagscore{19*}{5}\label{eq:19*}
+\end{equation}
+由此我们可以得到一个优雅的结论：入射光与反射光的 $y$ 分量速度等大反向。
+
+代入 $v_g=c/n$，假设光线传播方向为 $s_x,s_y$，\ref{eq:19*}化为：
+\begin{equation}
+    \dfrac{s_{iy}}{n_i}+\dfrac{s_{ry}}{n_r}=0\eqtag{20*}\label{eq:20*}
+\end{equation}
+其中 $n_i,n_r$ 为入射、反射光线的\textbf{群}折射率，注意不能代入\ref{eq:11}式中的 $n$！
+
+利用速度椭球的结论：
+\begin{equation}
+    \resizebox{0.92\textwidth}{!}{$n^2=n_o^2s_{/\!/}^2+n_e^2s_{\perp}^2=(n_o^2\sin^2\alpha+n_e^2\cos^2\alpha)s_x^2+2\sin\alpha\cos\alpha(n_o^2-n_e^2)s_xs_y+(n_o^2\cos^2\alpha+n_e^2\sin^2\alpha)s_y^2$}\eqtagscore{21*}{2}
+\end{equation}
+将\ref{eq:20*}两边取倒数并平方：
+\begin{equation}
+    \begin{cases}
+    A'=n_o^2\sin^2\alpha+n_e^2\cos^2\alpha\\
+    B'=2\sin\alpha\cos\alpha(n_o^2-n_e^2)\\
+    C'=n_o^2\cos^2\alpha+n_e^2\sin^2\alpha
+    \end{cases}\eqtag{22*}
+\end{equation}
+\begin{equation}
+    \dfrac{A's_{ix}^2+B's_{ix}s_{iy}+C's_{iy}^2}{s_{iy}^2}=\dfrac{A's_{rx}^2+B's_{rx}s_{ry}+C's_{ry}^2}{s_{ry}^2}\eqtag{23*}
+\end{equation}
+利用 $\tan i=-\dfrac{s_{ix}}{s_{iy}}$ 和 $\tan r=\dfrac{s_{rx}}{s_{ry}}$ 化简:
+\begin{equation}
+    A'\tan^2i-B'\tan i+C'=A'\tan^2r+B'\tan r+C',\ \tan r-\tan i=-\dfrac{B'}{A'}\eqtag{24*}
+\end{equation}
+化简得
+\begin{equation}
+    \tan r=\tan i+\dfrac{2(n_e^2-n_o^2)\tan\alpha}{n_e^2+n_o^2\tan^2\alpha}\eqtagscore{25*}{2}
+\end{equation}
+\end{multisol}
+\solsubsubq{3.2}{12} 由界面上切向波矢连续：
+\begin{equation}
+    k_x=\dfrac\omega c\dfrac{n_e^2\tan(i+\alpha)\cos\alpha-n_o^2\sin\alpha}{\sqrt{n_e^2\tan^2(i+\alpha)+n_o^2}}=\dfrac{n\omega}{c}\sin t\eqtagscore{29}{1}
+\end{equation}
+解得
+\begin{equation}
+    t=\arcsin\dfrac{n_e^2\sin(i+\alpha)\cos\alpha-n_o^2\cos(i+\alpha)\sin\alpha}{n\sqrt{n_e^2\sin^2(i+\alpha)+n_o^2\cos^2(i+\alpha)}}\eqtagscore{30}{1}
+\end{equation}
+设振幅反射率 $r_a=E_r/E_i$、振幅透射率 $t_a=E_t/E_i$，由 $\vec E,\vec H$ 切向连续：
+\begin{equation}
+    (\vec E_i+\vec E_r-\vec E_t)\cdot\hat x=0\ \Rightarrow\ \cos i-r_a\cos r=t_a\cos t\eqtagscore{31}{1}
+\end{equation}
+结合\ref{eq:3}式求出 $H_i,H_r,H_t$：
+\begin{equation}
+    \begin{aligned}
+    H_i&=\dfrac{\vec k_i\times\vec E_i}{\mu_0\omega}\\
+    &=\dfrac{(n_e^2\tan(i+\alpha)\cos\alpha-n_o^2\sin\alpha,-n_e^2\tan(i+\alpha)\sin\alpha-n_o^2\cos\alpha)}{\mu_0c\sqrt{n_e^2\tan^2(i+\alpha)+n_o^2}}\times E_i(\cos i,\sin i)\\
+    &=\dfrac{\sqrt{n_e^2\sin^2(i+\alpha)+n_o^2\cos^2(i+\alpha)}}{\mu_0c}E_i
+    \end{aligned}\eqtag{32}
+\end{equation}
+\begin{equation}
+    \begin{aligned}
+        H_r&=\dfrac{(n_e^2\tan(r-\alpha)\cos\alpha+n_o^2\sin\alpha,-n_e^2\tan(r-\alpha)\sin\alpha+n_o^2\cos\alpha)}{\mu_0c\sqrt{n_e^2\tan^2(r-\alpha)+n_o^2}}\times E_r(-\cos r,\sin r)\\
+        &=\dfrac{\sqrt{n_e^2\sin^2(r-\alpha)+n_o^2\cos^2(r-\alpha)}}{\mu_0c}E_r\\
+    \end{aligned}\eqtag{33}
+\end{equation}
+\begin{equation}
+    H_t=\dfrac{n}{\mu_0c}E_t\eqtag{34}
+\end{equation}
+\begin{equation}
+    \resizebox{0.93\textwidth}{!}{$H_i+H_r=H_t\Rightarrow\sqrt{n_e^2\sin^2(i+\alpha)+n_o^2\cos^2(i+\alpha)}+\sqrt{n_e^2\sin^2(r-\alpha)+n_o^2\cos^2(r-\alpha)}r_a=nt_a$}\eqtagscore{35}{3}
+\end{equation}
+记 $n_i=\sqrt{n_e^2\sin^2(i+\alpha)+n_o^2\cos^2(i+\alpha)},n_r=\sqrt{n_e^2\sin^2(r-\alpha)+n_o^2\cos^2(r-\alpha)}$（事实上这正是入射光与反射光对应的群折射率），可解得
+\begin{equation}
+    \begin{cases}
+        r_a=\dfrac{n\cos i-n_i\cos t}{n\cos r+n_r\cos t}\\[1em]
+        t_a=\dfrac{n_i\cos r+n_r\cos i}{n\cos r+n_r\cos t}
+    \end{cases}\eqtagscore{36}{2}\label{eq:36}
+\end{equation}
+
+由 $S\propto(\vec E\times\vec H)\cdot\vec n$，即 $S\propto HE_x$，由此可求出反射率：
+\begin{equation}
+    S_i=\dfrac{n_i\cos i}{\mu_0c}E_i^2,\ S_r=-\dfrac{n_r\cos r}{\mu_0c}E_r^2,\ R=\dfrac{n_r\cos r}{n_i\cos i}r_a^2\eqtagscore{37}{2}\label{eq:37}
+\end{equation}
+
+为了化简 $R$ 的结果，我们要用到\ref{eq:20*}的等效表达式：
+\begin{equation}
+    \dfrac{\cos i}{n_i}=\dfrac{\cos r}{n_r}\eqtag{38}
+\end{equation}
+
+该结论也可以证明如下：
+
+记 $x_i=E_i\cos i,x_r=-E_r\cos r,x_t=E_t\cos t,y_i=n_iE_i,y_r=n_rE_r,y_t=nE_t$，则
+\begin{equation}
+    \begin{cases}
+        x_i+x_r=x_t\\
+        y_i+y_r=y_t
+    \end{cases}\eqtag{39}
+\end{equation}
+
+又由法向能流守恒，$x_iy_i+x_ry_r=x_ty_t$，联立解得 $x_iy_r+x_ry_i=0$，证毕。
+
+将该结论代入\ref{eq:36}\ref{eq:37}式，最终得到与菲涅尔公式完全相同的表达式：
+
+\begin{equation}
+    R=\left(\dfrac{n\cos i-n_i\cos t}{n\cos i+n_i\cos t}\right)^2\eqtagscore{40}{2}
+\end{equation}
+
+\scoring
+
+\end{solution}
+
+\end{problem}
+
+\end{document}

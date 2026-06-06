@@ -1,0 +1,90 @@
+{
+  "total_score": 34,
+  "max_score": 40,
+  "item_scores": [
+    {
+      "item_id": "1",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 3,
+      "reasoning": "未明确写出动量定理形式的受力基本方程式，但给出了受力的最终推导结果，视作跳步给予部分分数。"
+    },
+    {
+      "item_id": "3",
+      "item_type": "equation",
+      "score": 3,
+      "max_score": 3,
+      "reasoning": "正确给出了阻尼系数γ的表达式。"
+    },
+    {
+      "item_id": "4",
+      "item_type": "equation",
+      "score": 5,
+      "max_score": 5,
+      "reasoning": "正确写出并计算了吸收单光子过程中的动能改变量表达式。"
+    },
+    {
+      "item_id": "5",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 4,
+      "reasoning": "未单独写出单束激光造成的动能变化率，但由后续正确的三维空间总变化率可推断其理解正确，按跳步给一半分数。"
+    },
+    {
+      "item_id": "6",
+      "item_type": "equation",
+      "score": 5,
+      "max_score": 5,
+      "reasoning": "正确写出了六束激光下的动能变化率总和。"
+    },
+    {
+      "item_id": "7",
+      "item_type": "equation",
+      "score": 4,
+      "max_score": 4,
+      "reasoning": "用自发辐射发射率 \\dot{N}=6\\Gamma 表示且物理意义正确，等价于标准答案中的 R_{tot}。"
+    },
+    {
+      "item_id": "8",
+      "item_type": "equation",
+      "score": 5,
+      "max_score": 5,
+      "reasoning": "正确算出了发射光子随机游走造成单位时间动能增加率。"
+    },
+    {
+      "item_id": "9",
+      "item_type": "equation",
+      "score": 3,
+      "max_score": 3,
+      "reasoning": "正确求出了原子的总动能变化率。"
+    },
+    {
+      "item_id": "10",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 4,
+      "reasoning": "未明确写出平衡态下的方均速率表达式，但从最终正确的温度表达式可推断其已正确联立，按跳步给一半分数。"
+    },
+    {
+      "item_id": "11",
+      "item_type": "equation",
+      "score": 4,
+      "max_score": 4,
+      "reasoning": "正确求得了极限温度形式（划掉的内容已忽略）。"
+    }
+  ],
+  "student_source": "第4题.jpg",
+  "standard_source": "laser_cooling.tex",
+  "model": "google/gemini-3.1-pro-preview",
+  "provider": "openrouter",
+  "usage": {
+    "prompt_tokens": 4924,
+    "completion_tokens": 4235,
+    "total_tokens": 9159,
+    "generation_id": "gen-1780739889-Xrr3GvWOEAVyMEAyVcGN"
+  },
+  "problem_title": "激光制冷技术",
+  "submitted_at": "2026-06-06T09:58:08Z",
+  "completed_at": "2026-06-06T09:58:42Z",
+  "duration_seconds": 33.92
+}

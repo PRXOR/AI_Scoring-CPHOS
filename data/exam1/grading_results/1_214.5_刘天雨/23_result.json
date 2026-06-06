@@ -1,0 +1,307 @@
+{
+  "total_score": 0,
+  "max_score": 50,
+  "item_scores": [
+    {
+      "item_id": "1",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "答卷完全空白，未作答"
+    },
+    {
+      "item_id": "2",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "答卷完全空白，未作答"
+    },
+    {
+      "item_id": "3",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "答卷完全空白，未作答"
+    },
+    {
+      "item_id": "4",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "答卷完全空白，未作答"
+    },
+    {
+      "item_id": "5",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "答卷完全空白，未作答"
+    },
+    {
+      "item_id": "6",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "答卷完全空白，未作答"
+    },
+    {
+      "item_id": "7",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "答卷完全空白，未作答"
+    },
+    {
+      "item_id": "8",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "答卷完全空白，未作答"
+    },
+    {
+      "item_id": "10",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "答卷完全空白，未作答"
+    },
+    {
+      "item_id": "11",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "答卷完全空白，未作答"
+    },
+    {
+      "item_id": "12",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "答卷完全空白，未作答"
+    },
+    {
+      "item_id": "13",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "答卷完全空白，未作答"
+    },
+    {
+      "item_id": "16",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "答卷完全空白，未作答"
+    },
+    {
+      "item_id": "17",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "答卷完全空白，未作答"
+    },
+    {
+      "item_id": "18",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "答卷完全空白，未作答"
+    },
+    {
+      "item_id": "19",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "答卷完全空白，未作答"
+    },
+    {
+      "item_id": "21",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "答卷完全空白，未作答"
+    },
+    {
+      "item_id": "22",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "答卷完全空白，未作答"
+    },
+    {
+      "item_id": "23",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "答卷完全空白，未作答"
+    },
+    {
+      "item_id": "24",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "答卷完全空白，未作答"
+    },
+    {
+      "item_id": "25",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "答卷完全空白，未作答"
+    },
+    {
+      "item_id": "27",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "答卷完全空白，未作答"
+    },
+    {
+      "item_id": "说明月球摄动效应更强_1",
+      "item_type": "text",
+      "score": 0,
+      "max_score": 3,
+      "reasoning": "答卷完全空白，未作答"
+    },
+    {
+      "item_id": "31",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "答卷完全空白，未作答"
+    },
+    {
+      "item_id": "34",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "答卷完全空白，未作答"
+    },
+    {
+      "item_id": "36",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 3,
+      "reasoning": "答卷完全空白，未作答"
+    },
+    {
+      "item_id": "37",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "答卷完全空白，未作答"
+    },
+    {
+      "item_id": "40",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "答卷完全空白，未作答"
+    },
+    {
+      "item_id": "42",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "答卷完全空白，未作答"
+    },
+    {
+      "item_id": "43",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "答卷完全空白，未作答"
+    },
+    {
+      "item_id": "44",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "答卷完全空白，未作答"
+    },
+    {
+      "item_id": "46",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "答卷完全空白，未作答"
+    },
+    {
+      "item_id": "49",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "答卷完全空白，未作答"
+    },
+    {
+      "item_id": "51",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "答卷完全空白，未作答"
+    },
+    {
+      "item_id": "52",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "答卷完全空白，未作答"
+    },
+    {
+      "item_id": "53",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "答卷完全空白，未作答"
+    },
+    {
+      "item_id": "说明a变小_1",
+      "item_type": "text",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "答卷完全空白，未作答"
+    },
+    {
+      "item_id": "54",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "答卷完全空白，未作答"
+    },
+    {
+      "item_id": "55",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "答卷完全空白，未作答"
+    },
+    {
+      "item_id": "说明$n=1$时$e$不变_1",
+      "item_type": "text",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "答卷完全空白，未作答"
+    },
+    {
+      "item_id": "$n>1$时$e$变小，$n<1$时$e$变大_1",
+      "item_type": "text",
+      "score": 0,
+      "max_score": 4,
+      "reasoning": "答卷完全空白，未作答"
+    }
+  ],
+  "student_source": "第2题.jpg, 第3题.jpg",
+  "standard_source": "orbit.tex",
+  "model": "google/gemini-3.1-pro-preview",
+  "provider": "openrouter",
+  "usage": {
+    "prompt_tokens": 13763,
+    "completion_tokens": 1935,
+    "total_tokens": 15698,
+    "generation_id": "gen-1780739867-fWZKS9jPKTyRDfK1gtcd"
+  },
+  "problem_title": "卫星绕地",
+  "submitted_at": "2026-06-06T09:57:46Z",
+  "completed_at": "2026-06-06T09:58:08Z",
+  "duration_seconds": 22.31
+}
