@@ -1,0 +1,181 @@
+{
+  "total_score": 28,
+  "max_score": 50,
+  "item_scores": [
+    {
+      "item_id": "1",
+      "item_type": "equation",
+      "score": 3,
+      "max_score": 3,
+      "reasoning": "写出了正确的相对介电张量形式。"
+    },
+    {
+      "item_id": "2",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 4,
+      "reasoning": "跳过了将平面波代换直接应用于四个麦克斯韦方程的中间过程，直接建立了波方程并代换，根据跳步规则给一半分。"
+    },
+    {
+      "item_id": "3",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 2,
+      "reasoning": "跳过了中间 B 场和 D 场的显式表示步骤，通过波方程推导，给跳步一半分。"
+    },
+    {
+      "item_id": "4",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "导出了与之完全等价形式的电场方程。"
+    },
+    {
+      "item_id": "5",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 1,
+      "reasoning": "通过 n = kc/ω 将速度等效代入波方程，等价于标准电场满足的方程。"
+    },
+    {
+      "item_id": "6",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "写出了各项系数构成的行列式等于 0 的特征方程形式。"
+    },
+    {
+      "item_id": "7",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "正确展开了对应的矩阵元（在 y 分量为 0 的二维面上，与要求完全等效），行列式一致。"
+    },
+    {
+      "item_id": "8",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 4,
+      "reasoning": "略去了行列式展开的具体四次多项式，直接给出了 n 的根，由于跳步给一半分数。"
+    },
+    {
+      "item_id": "11",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "正确求出了两个相折射率的具体表达式。"
+    },
+    {
+      "item_id": "12",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "正确解出了非寻常光电位移和电场的本征矢量方向分量，与标准答案等效。"
+    },
+    {
+      "item_id": "13",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 1,
+      "reasoning": "写出了能流密度即坡印廷矢量的正确表达式及对应方向组合。"
+    },
+    {
+      "item_id": "14",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 1,
+      "reasoning": "正确给出了传播方向角 φ 与相波矢角 θ 之间关系。"
+    },
+    {
+      "item_id": "15",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 1,
+      "reasoning": "写出寻常光的出射状态，明确 E、D 方向，以及此时 φ=θ。"
+    },
+    {
+      "item_id": "18",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "使用光线光学费马原理等效推导，未列出波矢偏角的等式，直接进行了变分极值跳过了该波矢关系。"
+    },
+    {
+      "item_id": "22",
+      "item_type": "equation",
+      "score": 5,
+      "max_score": 5,
+      "reasoning": "化简导出的导数为零的反射定律关系，左右两侧恰为波矢水平分量守恒条件，与标准解答中的该方程完全等价。"
+    },
+    {
+      "item_id": "28",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 4,
+      "reasoning": "未对获得的等式继续化简，未能解出 tan(r) 的最终表达式。"
+    },
+    {
+      "item_id": "29",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 1,
+      "reasoning": "准确针对出射界面列出了包含折射角 t 和等效界面入射端式的折射定律方程，等效于标准形式。"
+    },
+    {
+      "item_id": "30",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "仅写出“t 可求出”，未显式写出反正弦表达形式。"
+    },
+    {
+      "item_id": "31",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "未基于电场平行分量连续建立边界条件。"
+    },
+    {
+      "item_id": "35",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 3,
+      "reasoning": "未基于磁场连续建立第二项边界条件。"
+    },
+    {
+      "item_id": "36",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "未解出反射和透射振幅比公式。"
+    },
+    {
+      "item_id": "37",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "未写出 R 关于相关振幅和有效截面的表达式。"
+    },
+    {
+      "item_id": "40",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "错用了不物理的猜测菲涅尔反射率公式替代推导。"
+    }
+  ],
+  "student_source": "第7题.jpg",
+  "standard_source": "double_refraction.tex",
+  "model": "google/gemini-3.1-pro-preview",
+  "provider": "openrouter",
+  "usage": {
+    "prompt_tokens": 13020,
+    "completion_tokens": 11904,
+    "total_tokens": 24924,
+    "generation_id": "gen-1780769174-dI06fCOVaTRZWu2Tw3pT"
+  },
+  "problem_title": "双折射晶体",
+  "submitted_at": "2026-06-06T18:06:07Z",
+  "completed_at": "2026-06-06T18:08:20Z",
+  "duration_seconds": 132.87
+}

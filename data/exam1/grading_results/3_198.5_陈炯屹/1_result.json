@@ -1,0 +1,181 @@
+{
+  "total_score": 27,
+  "max_score": 40,
+  "item_scores": [
+    {
+      "item_id": "1",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 1,
+      "reasoning": "给出了x、y方向包含洛伦兹力的二阶运动微商方程，与标准形式等价。"
+    },
+    {
+      "item_id": "2",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "正确给出了z方向电场力的运动方程。"
+    },
+    {
+      "item_id": "3",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "引入了等价的复变量a=x+iy并写出了相应的复数运动方程。"
+    },
+    {
+      "item_id": "4",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "代入指数形式得到了关于频率变量的特征二次方程，物理意义及表达式与标准完全等价。"
+    },
+    {
+      "item_id": "5",
+      "item_type": "equation",
+      "score": 3,
+      "max_score": 3,
+      "reasoning": "利用判别式大于零正确得出了磁场强度的约束范围。"
+    },
+    {
+      "item_id": "6",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "写出了包含八极势修正项的z方向非线性运动方程。"
+    },
+    {
+      "item_id": "9",
+      "item_type": "equation",
+      "score": 3,
+      "max_score": 3,
+      "reasoning": "利用三倍角公式展开并处理了非共振项，通过消除久期项等价给出了受摄动后的频率结果。"
+    },
+    {
+      "item_id": "10",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 1,
+      "reasoning": "明确写出了正确的z方向运动基频相对变化量的表达式。"
+    },
+    {
+      "item_id": "11",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "正确写出了存在阻尼力与驱动力的受迫振动方程。"
+    },
+    {
+      "item_id": "12",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "跳过了三角函数谐波平衡展开方程的梳理。"
+    },
+    {
+      "item_id": "13",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 1,
+      "reasoning": "利用小量关系化简给出了含参数的振幅曲线方程代数形式。"
+    },
+    {
+      "item_id": "15",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 1,
+      "reasoning": "引入一系列中间变量成功构造了等价判断A^2根分布的三次方程。"
+    },
+    {
+      "item_id": "16",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "完整给出了判断振幅受频率响应曲线性质的关键隐式有理多项式方程。"
+    },
+    {
+      "item_id": "17",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 1,
+      "reasoning": "针对建立的三次方程给出了使其出现三解临界的代数判据条件。"
+    },
+    {
+      "item_id": "20",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 1,
+      "reasoning": "结合求根和判别式约束找出了对应三值现象出现时的不等式下限逻辑。"
+    },
+    {
+      "item_id": "21",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 1,
+      "reasoning": "正确演算出了与标准无量纲极小值等效的核心常系数因子16/(9sqrt(3))。"
+    },
+    {
+      "item_id": "22",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "最终化简计算出了与标准答案完全等价的驱动力下限解析表达式。"
+    },
+    {
+      "item_id": "23",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "2.3问虽写出了相对论动量，但漏掉了核心的洛伦兹力项且未完整给出2D矢量方程。"
+    },
+    {
+      "item_id": "24",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "未得到复数表达的动量方程。"
+    },
+    {
+      "item_id": "25",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 3,
+      "reasoning": "没有体现进入旋转坐标系的参数演化步骤。"
+    },
+    {
+      "item_id": "26",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "缺失稳态条件下的振幅频响方程推导。"
+    },
+    {
+      "item_id": "27",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "没有将模长方程作适当的一阶展开。"
+    },
+    {
+      "item_id": "说明可能存在三值区间_1",
+      "item_type": "text",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "答卷中该部分未作任何说明，未作答。"
+    }
+  ],
+  "student_source": "第1题.jpg",
+  "standard_source": "penning_trap.tex",
+  "model": "google/gemini-3.1-pro-preview",
+  "provider": "openrouter",
+  "usage": {
+    "prompt_tokens": 7226,
+    "completion_tokens": 11521,
+    "total_tokens": 18747,
+    "generation_id": "gen-1780767474-9GupbSvKPVPL7f98ZFZ1"
+  },
+  "problem_title": "潘宁阱",
+  "submitted_at": "2026-06-06T17:37:48Z",
+  "completed_at": "2026-06-06T17:39:55Z",
+  "duration_seconds": 127.43
+}

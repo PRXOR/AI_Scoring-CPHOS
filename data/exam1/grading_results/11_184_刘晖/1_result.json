@@ -1,0 +1,181 @@
+{
+  "total_score": 16,
+  "max_score": 40,
+  "item_scores": [
+    {
+      "item_id": "1",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 1,
+      "reasoning": "学生在式(1)和式(2)给出了受力表达式与电场的梯度关系，写出了等价形式"
+    },
+    {
+      "item_id": "2",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "通过电场z方向分量推算隐含给出了z方向受到的回复力，并在后续方程中得以正确运用，等同于标准答案"
+    },
+    {
+      "item_id": "3",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "式(4)中引入复变量s，写出的平面运动微分方程等价于标准答案"
+    },
+    {
+      "item_id": "4",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 2,
+      "reasoning": "跳过了特征方程，直接根据判别式大于零进行约束导出后续结果，依跳步规则给予一半分数"
+    },
+    {
+      "item_id": "5",
+      "item_type": "equation",
+      "score": 3,
+      "max_score": 3,
+      "reasoning": "式(6)给出的磁场范围约束条件与参考答案完全一致"
+    },
+    {
+      "item_id": "6",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "式(8)正确写出了考虑八极势扰动后的z方向运动微分方程"
+    },
+    {
+      "item_id": "9",
+      "item_type": "equation",
+      "score": 3,
+      "max_score": 3,
+      "reasoning": "利用谐波平衡和小参量近似正确求得频率修正因子及等效展开项"
+    },
+    {
+      "item_id": "10",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 1,
+      "reasoning": "式(12)对于基频相对变化量的结果完全正确"
+    },
+    {
+      "item_id": "11",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 2,
+      "reasoning": "将阻尼、非线性项与驱动力分别在式(13)和式(14)中分列，具备所需物理成分但未整合为同一方程，酌情赋部分分"
+    },
+    {
+      "item_id": "12",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "跳过了包含各谐波的方程，未展现含有三角函数的一倍频等式"
+    },
+    {
+      "item_id": "13",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "写出的振幅响应式(式17及18)遗漏了力幅项的平方，存在数学表达式错误"
+    },
+    {
+      "item_id": "15",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "未进行归一化代换求解，无相关内容"
+    },
+    {
+      "item_id": "16",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "无相关作答内容"
+    },
+    {
+      "item_id": "17",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "无相关讨论内容"
+    },
+    {
+      "item_id": "20",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "无相关作答内容"
+    },
+    {
+      "item_id": "21",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "没有求出下界结果，无相关内容"
+    },
+    {
+      "item_id": "22",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "无相关作答内容"
+    },
+    {
+      "item_id": "23",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "空白，未作答有关相对论效应讨论的内容"
+    },
+    {
+      "item_id": "24",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "无相关作答内容"
+    },
+    {
+      "item_id": "25",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 3,
+      "reasoning": "无相关作答内容"
+    },
+    {
+      "item_id": "26",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "无相关作答内容"
+    },
+    {
+      "item_id": "27",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "无相关作答内容"
+    },
+    {
+      "item_id": "说明可能存在三值区间_1",
+      "item_type": "text",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "无相关文字说明或讨论"
+    }
+  ],
+  "student_source": "第1题.jpg",
+  "standard_source": "penning_trap.tex",
+  "model": "google/gemini-3.1-pro-preview",
+  "provider": "openrouter",
+  "usage": {
+    "prompt_tokens": 7212,
+    "completion_tokens": 13195,
+    "total_tokens": 20407,
+    "generation_id": "gen-1780768169-UuYebLZi1ntIzD1ey4NO"
+  },
+  "problem_title": "潘宁阱",
+  "submitted_at": "2026-06-06T17:49:22Z",
+  "completed_at": "2026-06-06T17:51:02Z",
+  "duration_seconds": 99.54
+}

@@ -1,0 +1,181 @@
+{
+  "total_score": 19,
+  "max_score": 40,
+  "item_scores": [
+    {
+      "item_id": "1",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 1,
+      "reasoning": "写出了x, y, z三分量的受力方程，等价于标准答案的矢量受力公式"
+    },
+    {
+      "item_id": "2",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "明确写出了z方向的作用力F_z=-qU_0/d^2 z"
+    },
+    {
+      "item_id": "3",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "学生使用实变量写出了x, y方向耦合的运动微分方程，与标准答案复数形式等价且正确"
+    },
+    {
+      "item_id": "4",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "得出了与标准答案等价的特征方程并解出了正确的本征频率"
+    },
+    {
+      "item_id": "5",
+      "item_type": "equation",
+      "score": 3,
+      "max_score": 3,
+      "reasoning": "由判别式得到了使轨道局限的磁场下界，完全正确"
+    },
+    {
+      "item_id": "6",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "正确写出了带八极势微扰的z轴运动方程"
+    },
+    {
+      "item_id": "9",
+      "item_type": "equation",
+      "score": 3,
+      "max_score": 3,
+      "reasoning": "通过微扰方法求解得到了一阶近似的微扰频率偏移，过程完备并隐含给出了新频率和修正项，与答案等价"
+    },
+    {
+      "item_id": "10",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 1,
+      "reasoning": "明确写出了相对变化量的正确表达式"
+    },
+    {
+      "item_id": "11",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "正确写出了受迫振荡的运动微分方程"
+    },
+    {
+      "item_id": "12",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 1,
+      "reasoning": "运用三倍角公式展开并成功依据同频分量获得了等价的系数方程组"
+    },
+    {
+      "item_id": "13",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "未得到或写出振幅平方关系的等式"
+    },
+    {
+      "item_id": "15",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "未作答"
+    },
+    {
+      "item_id": "16",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "未作答"
+    },
+    {
+      "item_id": "17",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "未作答"
+    },
+    {
+      "item_id": "20",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "未作答"
+    },
+    {
+      "item_id": "21",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "未作答"
+    },
+    {
+      "item_id": "22",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "未作答"
+    },
+    {
+      "item_id": "23",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "未作答"
+    },
+    {
+      "item_id": "24",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "未作答"
+    },
+    {
+      "item_id": "25",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 3,
+      "reasoning": "未作答"
+    },
+    {
+      "item_id": "26",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "未作答"
+    },
+    {
+      "item_id": "27",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "未作答"
+    },
+    {
+      "item_id": "说明可能存在三值区间_1",
+      "item_type": "text",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "未作答"
+    }
+  ],
+  "student_source": "第1题.jpg",
+  "standard_source": "penning_trap.tex",
+  "model": "google/gemini-3.1-pro-preview",
+  "provider": "openrouter",
+  "usage": {
+    "prompt_tokens": 7212,
+    "completion_tokens": 9012,
+    "total_tokens": 16224,
+    "generation_id": "gen-1780768477-uLXm2TI2qDG18FNaTX91"
+  },
+  "problem_title": "潘宁阱",
+  "submitted_at": "2026-06-06T17:54:30Z",
+  "completed_at": "2026-06-06T17:55:51Z",
+  "duration_seconds": 80.57
+}

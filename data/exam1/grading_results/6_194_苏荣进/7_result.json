@@ -1,0 +1,181 @@
+{
+  "total_score": 22,
+  "max_score": 50,
+  "item_scores": [
+    {
+      "item_id": "1",
+      "item_type": "equation",
+      "score": 3,
+      "max_score": 3,
+      "reasoning": "正确写出了相对介电张量的矩阵形式，得满分。"
+    },
+    {
+      "item_id": "2",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 4,
+      "reasoning": "学生使用算符形式代替平面波代换，通过 $\\nabla=i\\vec{k}$ 和 $\\frac{\\partial}{\\partial t}=-i\\omega$ 联立旋度方程，未完整写出四个代数方程，但过程等价且核心逻辑正确，跳步酌情给一半分。"
+    },
+    {
+      "item_id": "3",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 2,
+      "reasoning": "未显式写出频域下 $\\vec{B}$ 和 $\\vec{D}$ 的表达式，但在推导波动方程时给出了对应的时域合并形式，根据跳步规则给一半分。"
+    },
+    {
+      "item_id": "4",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "推导出了正确的电场矢量波动方程，写成了矩阵和并矢相加的形式，与标准答案等价。"
+    },
+    {
+      "item_id": "5",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 1,
+      "reasoning": "给出了将 $\\vec{k}\\times(\\vec{k}\\times\\vec{E})$ 展开为并矢与单位阵形式的方程，等价于该给分点（虽保留了 $\\omega/c$ 而未换成 $n$），根据等价表达认可给满分。"
+    },
+    {
+      "item_id": "6",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "正确列出了求解本征值的行列式等于零的方程式，得满分。"
+    },
+    {
+      "item_id": "7",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "正确写出了与波动方程对应的矩阵各分量（使用了 $k_i$ 展开），得满分。"
+    },
+    {
+      "item_id": "8",
+      "item_type": "equation",
+      "score": 4,
+      "max_score": 4,
+      "reasoning": "正确计算并展开了行列式，成功化简并分离出两个因式，代数推导完全正确。"
+    },
+    {
+      "item_id": "11",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "正确解出了两种情况对应的相位折射率（或相应的波矢大小），得满分。"
+    },
+    {
+      "item_id": "12",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "针对非常光（e光）正确求出了 $\\vec{D}$ 与 $\\vec{E}$ 矢量的方向分量形式，得满分。"
+    },
+    {
+      "item_id": "13",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "未见坡印廷矢量 $\\vec{S}$ 的相关计算过程。"
+    },
+    {
+      "item_id": "14",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 1,
+      "reasoning": "正确得出了平面波传播方向与光轴夹角 $\\phi$ 的结果，得满分。"
+    },
+    {
+      "item_id": "15",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "未给出寻常光（o光）的情况（相关过程似被划去未作答）。"
+    },
+    {
+      "item_id": "18",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "在3.1问中，学生错误地将光线角直接当作波矢角代入折射率公式，物理模型不正确，未得出波矢角与光线角的关系。"
+    },
+    {
+      "item_id": "22",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 5,
+      "reasoning": "因前提方程错误，未得到正确的中间化简方程。"
+    },
+    {
+      "item_id": "28",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 4,
+      "reasoning": "展开结果包含物理概念上的误用，未得到正确的 $\\tan r$ 表达式。"
+    },
+    {
+      "item_id": "29",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "在3.2问中由于沿用了错误的相位匹配条件，波矢切向连续等式错误。"
+    },
+    {
+      "item_id": "30",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "推导出的出射角 $t$ 错误。"
+    },
+    {
+      "item_id": "31",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "未见界面处的电场振幅连续条件计算。"
+    },
+    {
+      "item_id": "35",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 3,
+      "reasoning": "未见磁场连续条件的推导。"
+    },
+    {
+      "item_id": "36",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "未解出振幅反射率。"
+    },
+    {
+      "item_id": "37",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "未见能流反射率的物理定义表达。"
+    },
+    {
+      "item_id": "40",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "未得出光强反射率的具体公式。"
+    }
+  ],
+  "student_source": "第7题.jpg",
+  "standard_source": "double_refraction.tex",
+  "model": "google/gemini-3.1-pro-preview",
+  "provider": "openrouter",
+  "usage": {
+    "prompt_tokens": 13005,
+    "completion_tokens": 13614,
+    "total_tokens": 26619,
+    "generation_id": "gen-1780767674-JGWgtbW5MItZqRjEvPLV"
+  },
+  "problem_title": "双折射晶体",
+  "submitted_at": "2026-06-06T17:41:07Z",
+  "completed_at": "2026-06-06T17:43:15Z",
+  "duration_seconds": 127.31
+}

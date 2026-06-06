@@ -1,0 +1,181 @@
+{
+  "total_score": 28,
+  "max_score": 40,
+  "item_scores": [
+    {
+      "item_id": "1",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 1,
+      "reasoning": "写出了正确的分量形式的受力方程，包含了电场力和洛伦兹力，等价于矢量形式，予以给分。"
+    },
+    {
+      "item_id": "2",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "正确写出了z方向的受力和未微扰运动方程。"
+    },
+    {
+      "item_id": "3",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "正确写出了x, y方向的实数形式动力学方程，与等效的复变量方程完全等价。"
+    },
+    {
+      "item_id": "4",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "通过试探解结合行列式推导出了等价的特征频率方程。"
+    },
+    {
+      "item_id": "5",
+      "item_type": "equation",
+      "score": 3,
+      "max_score": 3,
+      "reasoning": "从判别式正确解出了B_0的范围限制。"
+    },
+    {
+      "item_id": "6",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "正确写出了加入八极势扰动后的z方向受迫方程。"
+    },
+    {
+      "item_id": "9",
+      "item_type": "equation",
+      "score": 3,
+      "max_score": 3,
+      "reasoning": "通过一阶微扰和消除久期项的方法正确得到了频率的偏移等式，过程正确。"
+    },
+    {
+      "item_id": "10",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 1,
+      "reasoning": "正确给出了基频相对变化量。"
+    },
+    {
+      "item_id": "11",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "正确写出了包含阻尼项和驱动力的轴向运动方程。"
+    },
+    {
+      "item_id": "12",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "未写出保留一倍频代入后展开的等式。"
+    },
+    {
+      "item_id": "13",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "未能正确给出关于求模后的振幅代数方程。"
+    },
+    {
+      "item_id": "15",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "无相关归一化推导，未见该方程。"
+    },
+    {
+      "item_id": "16",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "无作答。"
+    },
+    {
+      "item_id": "17",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "无作答。"
+    },
+    {
+      "item_id": "20",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "无作答。"
+    },
+    {
+      "item_id": "21",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "无作答。"
+    },
+    {
+      "item_id": "22",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "未得出驱动力下界临界条件。"
+    },
+    {
+      "item_id": "23",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "正确写出了相对论下动量各分量的运动方程，物理含义与标准答案的矢量形式等价。"
+    },
+    {
+      "item_id": "24",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "利用稳态下洛伦兹因子恒定的特点提取后，写出了正确的复数形式微分方程（实验室系）。"
+    },
+    {
+      "item_id": "25",
+      "item_type": "equation",
+      "score": 3,
+      "max_score": 3,
+      "reasoning": "代入稳态复解化简导数项后，实质上得到了与标准答案旋转系下等价的复数代数关系式，物理内涵一致。"
+    },
+    {
+      "item_id": "26",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "通过取模正确得出了关于动量大小p恒等变形的代数方程，与标准答案利用u的等式等价。"
+    },
+    {
+      "item_id": "27",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "未作一阶展开近似推导。"
+    },
+    {
+      "item_id": "说明可能存在三值区间_1",
+      "item_type": "text",
+      "score": 1,
+      "max_score": 2,
+      "reasoning": "虽无严格的一阶展开证明过程，但定性指出了“有三值区间”，酌情给予部分分。"
+    }
+  ],
+  "student_source": "第1题.jpg",
+  "standard_source": "penning_trap.tex",
+  "model": "google/gemini-3.1-pro-preview",
+  "provider": "openrouter",
+  "usage": {
+    "prompt_tokens": 7228,
+    "completion_tokens": 13529,
+    "total_tokens": 20757,
+    "generation_id": "gen-1780767994-pfhPumwAd1jDrElKV1dP"
+  },
+  "problem_title": "潘宁阱",
+  "submitted_at": "2026-06-06T17:46:27Z",
+  "completed_at": "2026-06-06T17:48:31Z",
+  "duration_seconds": 123.24
+}

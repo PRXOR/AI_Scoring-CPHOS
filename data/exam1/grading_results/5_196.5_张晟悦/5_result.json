@@ -1,0 +1,216 @@
+{
+  "total_score": 38,
+  "max_score": 50,
+  "item_scores": [
+    {
+      "item_id": "1",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "正确写出了对应外场的磁矢势A在柱坐标下的等价表达式"
+    },
+    {
+      "item_id": "2",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "正确将A代入积分算出系统与外场相互作用能W"
+    },
+    {
+      "item_id": "3",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "由磁偶极矩公式正确积分求出圆环的无场偶极矩m"
+    },
+    {
+      "item_id": "4",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "明确算出W'=-m*B并指出其不等于W"
+    },
+    {
+      "item_id": "说明不同_1",
+      "item_type": "text",
+      "score": 1,
+      "max_score": 1,
+      "reasoning": "明确指出了两者不同"
+    },
+    {
+      "item_id": "说明区别的来源_1",
+      "item_type": "text",
+      "score": 1,
+      "max_score": 2,
+      "reasoning": "指出因为自场磁能/自能未纳入讨论，解释了本质原因的一半，给1分"
+    },
+    {
+      "item_id": "5",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "在计算偶极矩积分时，写出了含有电荷体密度与速度等价的电流元展开式"
+    },
+    {
+      "item_id": "6",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 1,
+      "reasoning": "使用电荷平动模型正确列出了将产生m的积分方程"
+    },
+    {
+      "item_id": "7",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "跳过了通过质量微元积分推导角动量的宏观步骤"
+    },
+    {
+      "item_id": "8",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "写出了匀质自转带电球体系下角动量L与磁偶极矩m的具体比例关系"
+    },
+    {
+      "item_id": "9",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 1,
+      "reasoning": "正确直接写出了匀质球的角动量公式"
+    },
+    {
+      "item_id": "10",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "由L和比例关系正确写出了含角速度的m的表达式"
+    },
+    {
+      "item_id": "11",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 1,
+      "reasoning": "准确指出了需要距离远大于球半径的远场条件d>>R"
+    },
+    {
+      "item_id": "12",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "写出了任意球所在位置的偶极磁场B并代入了向量等价表达式"
+    },
+    {
+      "item_id": "13",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "利用U=-m*B计算相互作用能"
+    },
+    {
+      "item_id": "14",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 1,
+      "reasoning": "代入具体表达式得到了包含d向量的等价正确相互作用能U"
+    },
+    {
+      "item_id": "15",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 1,
+      "reasoning": "正确列出了受力矩=m*B"
+    },
+    {
+      "item_id": "16",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 1,
+      "reasoning": "正确将代入具体向量与因子的等价式子来表示力矩"
+    },
+    {
+      "item_id": "17",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "正确利用角动量定理将力矩关联到角速度变化率"
+    },
+    {
+      "item_id": "18",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "计算并化简得出了球2角初速度的微分方程与其等价形式"
+    },
+    {
+      "item_id": "19",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 1,
+      "reasoning": "明确写出了进动角速度矢量，隐含了正确的进动方向"
+    },
+    {
+      "item_id": "20",
+      "item_type": "equation",
+      "score": 3,
+      "max_score": 3,
+      "reasoning": "写出了精确完整的进动角速度大小和方向，与标准答案等价"
+    },
+    {
+      "item_id": "21",
+      "item_type": "equation",
+      "score": 3,
+      "max_score": 3,
+      "reasoning": "类似地写出了球1相对应的微分反生力矩形式，形式正确"
+    },
+    {
+      "item_id": "22",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 4,
+      "reasoning": "未考察也不包含轨道相互作用力F_2"
+    },
+    {
+      "item_id": "23",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "得出不守恒结论，没考虑到位移受力所带来的轨道力矩"
+    },
+    {
+      "item_id": "24",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "未涉及或进行相关动量的标量推导计算"
+    },
+    {
+      "item_id": "25",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "未单独写出两球分离自转对应的总动能Ek"
+    },
+    {
+      "item_id": "26",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 1,
+      "reasoning": "猜测或得出了总能量导数为0以及总能量守恒的正确结论"
+    }
+  ],
+  "student_source": "第5题.jpg",
+  "standard_source": "magnetic_dipole.tex",
+  "model": "google/gemini-3.1-pro-preview",
+  "provider": "openrouter",
+  "usage": {
+    "prompt_tokens": 7045,
+    "completion_tokens": 10910,
+    "total_tokens": 17955,
+    "generation_id": "gen-1780770759-sjN0B9grOb3H1z3Cd46n"
+  },
+  "problem_title": "磁偶极矩",
+  "submitted_at": "2026-06-06T18:28:46Z",
+  "completed_at": "2026-06-06T18:33:54Z",
+  "duration_seconds": 307.38
+}

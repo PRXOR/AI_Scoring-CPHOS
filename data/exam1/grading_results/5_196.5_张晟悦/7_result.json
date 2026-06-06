@@ -1,0 +1,181 @@
+{
+  "total_score": 25,
+  "max_score": 50,
+  "item_scores": [
+    {
+      "item_id": "1",
+      "item_type": "equation",
+      "score": 3,
+      "max_score": 3,
+      "reasoning": "正确写出相对介电张量。"
+    },
+    {
+      "item_id": "2",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 4,
+      "reasoning": "跳过写出k空间的麦克斯韦方程组，直接得出了波动方程，按跳步给一半分数。"
+    },
+    {
+      "item_id": "3",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 2,
+      "reasoning": "跳过了关于B场的中间步骤，按跳步给一半分数。"
+    },
+    {
+      "item_id": "4",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "正确给出了用介电张量表示的波矢空间的波动方程。"
+    },
+    {
+      "item_id": "5",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 1,
+      "reasoning": "等效引入了相速度替代折射率，从而将k与omega的关系代入方程，符合方程物理意义。"
+    },
+    {
+      "item_id": "6",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "准确写出了包含场分量的线性矩阵方程对应的各个分量等式。"
+    },
+    {
+      "item_id": "7",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "成功写出了线性方程系统的行列式等于零的久期方程形式。"
+    },
+    {
+      "item_id": "8",
+      "item_type": "equation",
+      "score": 4,
+      "max_score": 4,
+      "reasoning": "正确对行列式进行了展开并提取出相应特征根多项式。"
+    },
+    {
+      "item_id": "11",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "正确求解得出普通光和非常光的折射率公式（尽管采用了等价的不同形式的底数相加）。"
+    },
+    {
+      "item_id": "12",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "利用特征方程正确求解出对应非常光的电场E和电位移D的特征矢量。"
+    },
+    {
+      "item_id": "13",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "未计算坡印廷矢量S。"
+    },
+    {
+      "item_id": "14",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "未计算非常光的光线传播方向与光轴的夹角phi。"
+    },
+    {
+      "item_id": "15",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 1,
+      "reasoning": "正确分析出o光，并给出了匹配的D和E矢量（省略了显然的phi=theta）。"
+    },
+    {
+      "item_id": "18",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "错误地以为波矢角即为光线角以代入相折射率公式，未正确运用波矢切向分量连续。"
+    },
+    {
+      "item_id": "22",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 5,
+      "reasoning": "物理前提错误，未能推导出正确的折射角正切等式。"
+    },
+    {
+      "item_id": "28",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 4,
+      "reasoning": "物理模型错误导致得到的tan r表达式完全不符。"
+    },
+    {
+      "item_id": "29",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "错误使用了相折射率计算出射角边界条件，未得出正确的等效表达式。"
+    },
+    {
+      "item_id": "30",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "求出的最终出射角解析式错误。"
+    },
+    {
+      "item_id": "31",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 1,
+      "reasoning": "成功且正确列出了电场切向分量的连续性条件边界方程。"
+    },
+    {
+      "item_id": "35",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 3,
+      "reasoning": "列写磁场连续性条件时，错误地直接使用相折射率而未进行群折射率修正，系数错误。"
+    },
+    {
+      "item_id": "36",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "尽管前置系数有误，但成功且形式正确地解出了对应的反射波振幅比公式，认可该数学代数步骤。"
+    },
+    {
+      "item_id": "37",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "反射率公式错误地直接等于振幅比平方，漏掉了能流密度的角度与折射率修正因子。"
+    },
+    {
+      "item_id": "40",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "未得到或简化出最终正确的光强反射率公式。"
+    }
+  ],
+  "student_source": "第7题.jpg",
+  "standard_source": "double_refraction.tex",
+  "model": "google/gemini-3.1-pro-preview",
+  "provider": "openrouter",
+  "usage": {
+    "prompt_tokens": 12977,
+    "completion_tokens": 23128,
+    "total_tokens": 36105,
+    "generation_id": "gen-1780767440-uqJoi3ILdtTN3tBNjQbr"
+  },
+  "problem_title": "双折射晶体",
+  "submitted_at": "2026-06-06T17:37:14Z",
+  "completed_at": "2026-06-06T17:41:07Z",
+  "duration_seconds": 233.44
+}

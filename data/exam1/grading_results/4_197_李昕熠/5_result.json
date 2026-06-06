@@ -1,0 +1,216 @@
+{
+  "total_score": 27,
+  "max_score": 50,
+  "item_scores": [
+    {
+      "item_id": "1",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "未写出磁矢势A的具体表达式。"
+    },
+    {
+      "item_id": "2",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "未写出相互作用能的具体数值结果。"
+    },
+    {
+      "item_id": "3",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "给出了积分等效为磁偶极矩的表达式，与 m=IS 等价。"
+    },
+    {
+      "item_id": "4",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "得出的W结果符号错误且未进行正确外场能量对比计算。"
+    },
+    {
+      "item_id": "说明不同_1",
+      "item_type": "text",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "仅仅指出了结果不同，未给出物理原因解释。"
+    },
+    {
+      "item_id": "说明区别的来源_1",
+      "item_type": "text",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "未说明区别来源。"
+    },
+    {
+      "item_id": "5",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "积分微元中明确体现了电流密度等于电荷密度乘以速度的关系。"
+    },
+    {
+      "item_id": "6",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 1,
+      "reasoning": "写出了用电荷密度和速度表达的磁偶极矩体积分公式。"
+    },
+    {
+      "item_id": "7",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "未借助角动量公式进行计算，直接积分，无此表达式。"
+    },
+    {
+      "item_id": "8",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "未给出磁偶极矩与角动量的比例关系公式。"
+    },
+    {
+      "item_id": "9",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "未写出带电球的刚体角动量表达式。"
+    },
+    {
+      "item_id": "10",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "通过直接积分正确得出了磁偶极矩随角速度变化的最终结果。"
+    },
+    {
+      "item_id": "11",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 1,
+      "reasoning": "明确写出了远场相互作用条件 d >> R。"
+    },
+    {
+      "item_id": "12",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "正确写出了磁偶极子产生的磁场表达式。"
+    },
+    {
+      "item_id": "13",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "正确写出了两个磁偶极子之间的相互作用势能表达式。"
+    },
+    {
+      "item_id": "14",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "未将角速度和偶极矩的关系代入势能表达式获得最终结果。"
+    },
+    {
+      "item_id": "15",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 1,
+      "reasoning": "正确表达了系统所受磁力矩公式。"
+    },
+    {
+      "item_id": "16",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 1,
+      "reasoning": "正确代入磁场写出了2号球所受力矩的表达式。"
+    },
+    {
+      "item_id": "17",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "正确应用角动量定理将力矩与角速度导数联系起来。"
+    },
+    {
+      "item_id": "18",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "通过等价推导给出了2号球角速度的微分变形等式。"
+    },
+    {
+      "item_id": "19",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 1,
+      "reasoning": "明确计算并写出了进动轴单位向量的方向。"
+    },
+    {
+      "item_id": "20",
+      "item_type": "equation",
+      "score": 3,
+      "max_score": 3,
+      "reasoning": "正确推导并给出了进动角频率大小的表达式。"
+    },
+    {
+      "item_id": "21",
+      "item_type": "equation",
+      "score": 3,
+      "max_score": 3,
+      "reasoning": "准确写出了1号球对应的角速度演化微分方程。"
+    },
+    {
+      "item_id": "22",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 4,
+      "reasoning": "未计算球2受到的相互作用力。"
+    },
+    {
+      "item_id": "23",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "遗漏了力的力矩，得出总角动量不守恒的错误结论。"
+    },
+    {
+      "item_id": "24",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 2,
+      "reasoning": "指出了各自角速度大小的导数为0，但未证明两角速度点乘守恒，给部分分。"
+    },
+    {
+      "item_id": "25",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "提到了动能守恒，但未写出具体的系统动能公式。"
+    },
+    {
+      "item_id": "26",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 1,
+      "reasoning": "给出了总势能加总动能导数为0从而能量守恒的微分形式。"
+    }
+  ],
+  "student_source": "第5题.jpg",
+  "standard_source": "magnetic_dipole.tex",
+  "model": "google/gemini-3.1-pro-preview",
+  "provider": "openrouter",
+  "usage": {
+    "prompt_tokens": 7045,
+    "completion_tokens": 5773,
+    "total_tokens": 12818,
+    "generation_id": "gen-1780770486-50hMhaRmpj9z9GPeoofH"
+  },
+  "problem_title": "磁偶极矩",
+  "submitted_at": "2026-06-06T18:28:00Z",
+  "completed_at": "2026-06-06T18:28:46Z",
+  "duration_seconds": 46.79
+}

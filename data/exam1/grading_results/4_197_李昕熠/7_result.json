@@ -1,0 +1,181 @@
+{
+  "total_score": 23,
+  "max_score": 50,
+  "item_scores": [
+    {
+      "item_id": "1",
+      "item_type": "equation",
+      "score": 3,
+      "max_score": 3,
+      "reasoning": "正确写出了相对介电张量矩阵，各个分量对应无误。"
+    },
+    {
+      "item_id": "2",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 4,
+      "reasoning": "正确写出了电场与磁场旋度对应的两个偏微分转换方程，缺失了两个散度方程，给出部分步骤分。"
+    },
+    {
+      "item_id": "3",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "直接消去磁场得到了电场和电位移矢量的正确代数关系方程，形式等价。"
+    },
+    {
+      "item_id": "4",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "正确推导出了用角频率和光速替换导磁率及介电常数后的等效表示。"
+    },
+    {
+      "item_id": "5",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "未显式写出引入折射率n的整体矢量方程，而是直接使用了分量替换法，故此独立打分项不给分。"
+    },
+    {
+      "item_id": "6",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "正确展开矩阵方程，推导出了用于求解系统的三维分量方程组，实质满足了该评分点的要求。"
+    },
+    {
+      "item_id": "7",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "学生写出的方程组正确包含了矩阵的所有元素要求，等价于写出了正确的行列式或方阵。"
+    },
+    {
+      "item_id": "8",
+      "item_type": "equation",
+      "score": 4,
+      "max_score": 4,
+      "reasoning": "针对光波具体方向，正确因式分解出了包含n平方的方程，并化简到与答案相同的等效形式。"
+    },
+    {
+      "item_id": "11",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "明确且正确地写出了两个相折射率的根（寻常光与异常光）。"
+    },
+    {
+      "item_id": "12",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "正确求出了属于异常光情况下的电场强度与电位移矢量的分量关系比例，结果完全等价。"
+    },
+    {
+      "item_id": "13",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "直接给出了光线方向的结果，未给出证明中间量（坡印廷矢量）的推导步骤。"
+    },
+    {
+      "item_id": "14",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 1,
+      "reasoning": "给出夹角的正切值，能据此正确直接得到异常光的群速度空间分布角。"
+    },
+    {
+      "item_id": "15",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 1,
+      "reasoning": "寻常光条件下能正确给出D与E矢量的平行方向属性，全解有效。"
+    },
+    {
+      "item_id": "18",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "第三问混淆了光线与波矢的传播角物理图像，没有出现正确的对应关系项。"
+    },
+    {
+      "item_id": "22",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 5,
+      "reasoning": "立论方程存在根本错误，无法推出正确或等价的几何化简结论。"
+    },
+    {
+      "item_id": "28",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 4,
+      "reasoning": "受起步错误影响结论形态明显不对，不给分。"
+    },
+    {
+      "item_id": "29",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "波矢切向匹配连续条件运用错误，代入了错误的广义斯涅尔定律关联式。"
+    },
+    {
+      "item_id": "30",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "透射角计算公式源自错误的假设，且不具有等价正确性。"
+    },
+    {
+      "item_id": "31",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "未就切向电场方向在出射面的对应连续条件作答。"
+    },
+    {
+      "item_id": "35",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 3,
+      "reasoning": "缺失反射/透射的有效能流或磁场匹配方程步骤。"
+    },
+    {
+      "item_id": "36",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "空白作答。"
+    },
+    {
+      "item_id": "37",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "空白作答。"
+    },
+    {
+      "item_id": "40",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "没有完成光强反射率R的推导。"
+    }
+  ],
+  "student_source": "第7题.jpg",
+  "standard_source": "double_refraction.tex",
+  "model": "google/gemini-3.1-pro-preview",
+  "provider": "openrouter",
+  "usage": {
+    "prompt_tokens": 12977,
+    "completion_tokens": 11661,
+    "total_tokens": 24638,
+    "generation_id": "gen-1780767345-q2B6wdVYcvqXtEHGFeMQ"
+  },
+  "problem_title": "双折射晶体",
+  "submitted_at": "2026-06-06T17:35:39Z",
+  "completed_at": "2026-06-06T17:37:14Z",
+  "duration_seconds": 95.44
+}

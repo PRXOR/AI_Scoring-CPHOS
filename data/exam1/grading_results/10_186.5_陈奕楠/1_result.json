@@ -1,0 +1,181 @@
+{
+  "total_score": 18,
+  "max_score": 40,
+  "item_scores": [
+    {
+      "item_id": "1",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 1,
+      "reasoning": "写出了包含电场力和洛伦兹力的受力方程，且电场分布已代入，等价于标准答案。"
+    },
+    {
+      "item_id": "2",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "根据第一问写出的电场分布及2.1中明确列出的Ez表达式，可见已正确掌握z方向受力。"
+    },
+    {
+      "item_id": "3",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "定义复平面坐标u=x+iy并推导出了等效的二阶微分方程。"
+    },
+    {
+      "item_id": "4",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "采用特征根求解方法，得到了与角频率方程等价的待定系数方程。"
+    },
+    {
+      "item_id": "5",
+      "item_type": "equation",
+      "score": 3,
+      "max_score": 3,
+      "reasoning": "正确利用判别式条件求解出了B0的范围。"
+    },
+    {
+      "item_id": "6",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "正确列出了考虑八极势后z方向带三次项的非线性运动方程。"
+    },
+    {
+      "item_id": "9",
+      "item_type": "equation",
+      "score": 3,
+      "max_score": 3,
+      "reasoning": "利用一阶摄动近似和三倍角公式展开只保留一倍频，得到了等价的修正方程。"
+    },
+    {
+      "item_id": "10",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 1,
+      "reasoning": "成功计算出z方向频率相对变化量，结果正确。"
+    },
+    {
+      "item_id": "11",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "正确给出了包含阻尼项和外部解析驱动力的非线性受迫运动方程。"
+    },
+    {
+      "item_id": "12",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "此部分无相关作答。"
+    },
+    {
+      "item_id": "13",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "此部分无相关作答。"
+    },
+    {
+      "item_id": "15",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "此部分无相关作答。"
+    },
+    {
+      "item_id": "16",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "此部分无相关作答。"
+    },
+    {
+      "item_id": "17",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "此部分无相关作答。"
+    },
+    {
+      "item_id": "20",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "此部分无相关作答。"
+    },
+    {
+      "item_id": "21",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "此部分无相关作答。"
+    },
+    {
+      "item_id": "22",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "此部分无相关作答。"
+    },
+    {
+      "item_id": "23",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "此部分无相关作答。"
+    },
+    {
+      "item_id": "24",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "此部分无相关作答。"
+    },
+    {
+      "item_id": "25",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 3,
+      "reasoning": "此部分无相关作答。"
+    },
+    {
+      "item_id": "26",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "此部分无相关作答。"
+    },
+    {
+      "item_id": "27",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "此部分无相关作答。"
+    },
+    {
+      "item_id": "说明可能存在三值区间_1",
+      "item_type": "text",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "此部分无相关作答。"
+    }
+  ],
+  "student_source": "第1题.jpg",
+  "standard_source": "penning_trap.tex",
+  "model": "google/gemini-3.1-pro-preview",
+  "provider": "openrouter",
+  "usage": {
+    "prompt_tokens": 7212,
+    "completion_tokens": 5204,
+    "total_tokens": 12416,
+    "generation_id": "gen-1780768117-sYCtdVxf7sIGNRKIuAhL"
+  },
+  "problem_title": "潘宁阱",
+  "submitted_at": "2026-06-06T17:48:31Z",
+  "completed_at": "2026-06-06T17:49:22Z",
+  "duration_seconds": 51.88
+}

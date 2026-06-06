@@ -1,5 +1,5 @@
 {
-  "total_score": 21,
+  "total_score": 25,
   "max_score": 50,
   "item_scores": [
     {
@@ -7,161 +7,161 @@
       "item_type": "equation",
       "score": 3,
       "max_score": 3,
-      "reasoning": "正确写出了相对介电张量矩阵。"
+      "reasoning": "写出了正确的介电张量矩阵。"
     },
     {
       "item_id": "2",
       "item_type": "equation",
-      "score": 2,
+      "score": 4,
       "max_score": 4,
-      "reasoning": "未单独写出平面波麦克斯韦方程组，但写出了正确的电磁波波动方程，依据跳步规则给予一半分数。"
+      "reasoning": "正确写出了k空间下的麦克斯韦方程组。"
     },
     {
       "item_id": "3",
       "item_type": "equation",
-      "score": 1,
+      "score": 2,
       "max_score": 2,
-      "reasoning": "隐含使用在了上述波动方程的推导中，未单独写出，按跳步规则给予一半分数。"
+      "reasoning": "正确推导出电位移矢量与电场、波矢的关系。"
     },
     {
       "item_id": "4",
       "item_type": "equation",
       "score": 2,
       "max_score": 2,
-      "reasoning": "正确推导出电场满足的矢量方程，形式与标准答案等价。"
+      "reasoning": "完成了电位移矢量关系式与介电张量形式的转换。"
     },
     {
       "item_id": "5",
       "item_type": "equation",
-      "score": 0,
+      "score": 1,
       "max_score": 1,
-      "reasoning": "过程中未显式写出引入折射率n的方程步骤。"
+      "reasoning": "引入折射率相关的变量，化简了电场方程。"
     },
     {
       "item_id": "6",
       "item_type": "equation",
       "score": 2,
       "max_score": 2,
-      "reasoning": "写出了正确的三维线性分量方程组，等价于原矩阵操作。"
+      "reasoning": "将系统重写为矩阵形式并令行列式为0以求非平庸解。"
     },
     {
       "item_id": "7",
       "item_type": "equation",
       "score": 2,
       "max_score": 2,
-      "reasoning": "列出的分量方程组各项系数与标准答案的矩阵元素完全一致。"
+      "reasoning": "写出了正确的矩阵元素。"
     },
     {
       "item_id": "8",
       "item_type": "equation",
-      "score": 2,
+      "score": 4,
       "max_score": 4,
-      "reasoning": "跳过了使行列式为零或方程推导的具体展开步骤，直接写出最后结果，扣除步骤分，给一半分。"
+      "reasoning": "正确展开行列式并得出特征方程。"
     },
     {
       "item_id": "11",
       "item_type": "equation",
       "score": 2,
       "max_score": 2,
-      "reasoning": "正确给出了两种情况下的相折射率n的表达式。"
+      "reasoning": "正确给出了两种情况下的相折射率n。"
     },
     {
       "item_id": "12",
       "item_type": "equation",
       "score": 2,
       "max_score": 2,
-      "reasoning": "给出的非常光对应的E和D矢量表达式与标准答案等价（相差恰当的比例因子）。"
+      "reasoning": "正确写出了e光(case 2)对应的电位移矢量和电场强度的表达式。"
     },
     {
       "item_id": "13",
       "item_type": "equation",
-      "score": 1,
+      "score": 0,
       "max_score": 1,
-      "reasoning": "正确写出了基于E和k的坡印廷矢量公式。"
+      "reasoning": "未具体计算坡印廷矢量表达式。"
     },
     {
       "item_id": "14",
       "item_type": "equation",
-      "score": 1,
+      "score": 0,
       "max_score": 1,
-      "reasoning": "正确算出了传播方向与光轴的夹角phi的数学关系式。"
+      "reasoning": "公式被划掉，未能正确给出e光传播方向与光轴的夹角。"
     },
     {
       "item_id": "15",
       "item_type": "equation",
       "score": 1,
       "max_score": 1,
-      "reasoning": "正确得出了寻常光情况(n1)下D、E的偏振方向以及夹角phi为theta的结论。"
+      "reasoning": "正确给出了o광(case 1)对应的D, E及光线方向。"
     },
     {
       "item_id": "18",
       "item_type": "equation",
       "score": 0,
       "max_score": 2,
-      "reasoning": "未作答第三问。"
+      "reasoning": "无相关过程和结果。"
     },
     {
       "item_id": "22",
       "item_type": "equation",
       "score": 0,
       "max_score": 5,
-      "reasoning": "未作答第三问。"
+      "reasoning": "无相关过程和结果。"
     },
     {
       "item_id": "28",
       "item_type": "equation",
       "score": 0,
       "max_score": 4,
-      "reasoning": "未作答第三问。"
+      "reasoning": "无相关过程和结果。"
     },
     {
       "item_id": "29",
       "item_type": "equation",
       "score": 0,
       "max_score": 1,
-      "reasoning": "未作答第三问。"
+      "reasoning": "无相关过程和结果。"
     },
     {
       "item_id": "30",
       "item_type": "equation",
       "score": 0,
       "max_score": 1,
-      "reasoning": "未作答第三问。"
+      "reasoning": "无相关过程和结果。"
     },
     {
       "item_id": "31",
       "item_type": "equation",
       "score": 0,
       "max_score": 1,
-      "reasoning": "未作答第三问。"
+      "reasoning": "无相关过程和结果。"
     },
     {
       "item_id": "35",
       "item_type": "equation",
       "score": 0,
       "max_score": 3,
-      "reasoning": "未作答第三问。"
+      "reasoning": "无相关过程和结果。"
     },
     {
       "item_id": "36",
       "item_type": "equation",
       "score": 0,
       "max_score": 2,
-      "reasoning": "未作答第三问。"
+      "reasoning": "无相关过程和结果。"
     },
     {
       "item_id": "37",
       "item_type": "equation",
       "score": 0,
       "max_score": 2,
-      "reasoning": "未作答第三问。"
+      "reasoning": "无相关过程和结果。"
     },
     {
       "item_id": "40",
       "item_type": "equation",
       "score": 0,
       "max_score": 2,
-      "reasoning": "未作答第三问。"
+      "reasoning": "无相关过程和结果。"
     }
   ],
   "student_source": "第7题.jpg",
@@ -169,13 +169,13 @@
   "model": "google/gemini-3.1-pro-preview",
   "provider": "openrouter",
   "usage": {
-    "prompt_tokens": 13005,
-    "completion_tokens": 8659,
-    "total_tokens": 21664,
-    "generation_id": "gen-1780767055-a4FZyFKJWeYHPlwttcMW"
+    "prompt_tokens": 12977,
+    "completion_tokens": 6917,
+    "total_tokens": 19894,
+    "generation_id": "gen-1780768071-QjFZcuNV1HosLIlaYlJk"
   },
   "problem_title": "双折射晶体",
-  "submitted_at": "2026-06-06T17:30:49Z",
-  "completed_at": "2026-06-06T17:32:29Z",
-  "duration_seconds": 100.19
+  "submitted_at": "2026-06-06T17:47:44Z",
+  "completed_at": "2026-06-06T17:49:02Z",
+  "duration_seconds": 77.85
 }

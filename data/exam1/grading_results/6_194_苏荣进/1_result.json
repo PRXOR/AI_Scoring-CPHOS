@@ -1,0 +1,181 @@
+{
+  "total_score": 18,
+  "max_score": 40,
+  "item_scores": [
+    {
+      "item_id": "1",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 1,
+      "reasoning": "正确写出了带电粒子在受扰动前潘宁阱中受洛伦兹力及电场力的受力分析和分量方程"
+    },
+    {
+      "item_id": "2",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "正确写出了z方向未受扰动时的运动方程及恢复力"
+    },
+    {
+      "item_id": "3",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "写出了分别对应x、y方向的等价耦合运动微分方程"
+    },
+    {
+      "item_id": "4",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "通过矩阵行列式求本征值正确得出了等价的特征方程"
+    },
+    {
+      "item_id": "5",
+      "item_type": "equation",
+      "score": 3,
+      "max_score": 3,
+      "reasoning": "基于判别式正确得出了所需的磁场临界范围，考虑负根符合物理情况"
+    },
+    {
+      "item_id": "6",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "正确写出了包含八极势扰动后的z方向运动方程"
+    },
+    {
+      "item_id": "9",
+      "item_type": "equation",
+      "score": 3,
+      "max_score": 3,
+      "reasoning": "通过保留一倍频等价地进行了微扰展开，提取出了正确的基频频移相关系数"
+    },
+    {
+      "item_id": "10",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 1,
+      "reasoning": "正确给出了基频相对变化量结果"
+    },
+    {
+      "item_id": "11",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "完整且正确地写出了包含阻尼项与驱动力项的z方向受迫运动微分方程"
+    },
+    {
+      "item_id": "12",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "推导复数形式的一倍频方程有误且中途放弃，未能得到正确方程"
+    },
+    {
+      "item_id": "13",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "未见相关推导作答"
+    },
+    {
+      "item_id": "15",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "未见相关推导作答"
+    },
+    {
+      "item_id": "16",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "未见相关推导作答"
+    },
+    {
+      "item_id": "17",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "未见相关推导作答"
+    },
+    {
+      "item_id": "20",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "未见相关推导作答"
+    },
+    {
+      "item_id": "21",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "未解答此部分"
+    },
+    {
+      "item_id": "22",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "未解答此部分"
+    },
+    {
+      "item_id": "23",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "未解答此部分"
+    },
+    {
+      "item_id": "24",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "未解答此部分"
+    },
+    {
+      "item_id": "25",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 3,
+      "reasoning": "未解答此部分"
+    },
+    {
+      "item_id": "26",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "未解答此部分"
+    },
+    {
+      "item_id": "27",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "未解答此部分"
+    },
+    {
+      "item_id": "说明可能存在三值区间_1",
+      "item_type": "text",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "未解答此部分"
+    }
+  ],
+  "student_source": "第1题.jpg",
+  "standard_source": "penning_trap.tex",
+  "model": "google/gemini-3.1-pro-preview",
+  "provider": "openrouter",
+  "usage": {
+    "prompt_tokens": 7240,
+    "completion_tokens": 7348,
+    "total_tokens": 14588,
+    "generation_id": "gen-1780767724-VLkx2DLBB4CCiT6CUvuB"
+  },
+  "problem_title": "潘宁阱",
+  "submitted_at": "2026-06-06T17:41:58Z",
+  "completed_at": "2026-06-06T17:43:04Z",
+  "duration_seconds": 65.97
+}

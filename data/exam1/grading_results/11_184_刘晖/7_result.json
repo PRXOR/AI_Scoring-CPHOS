@@ -1,5 +1,5 @@
 {
-  "total_score": 21,
+  "total_score": 32,
   "max_score": 50,
   "item_scores": [
     {
@@ -7,161 +7,161 @@
       "item_type": "equation",
       "score": 3,
       "max_score": 3,
-      "reasoning": "正确写出了相对介电张量矩阵。"
+      "reasoning": "写出了正确的相对介电张量"
     },
     {
       "item_id": "2",
       "item_type": "equation",
       "score": 2,
       "max_score": 4,
-      "reasoning": "未单独写出平面波麦克斯韦方程组，但写出了正确的电磁波波动方程，依据跳步规则给予一半分数。"
+      "reasoning": "写出了麦克斯韦方程组的两个旋度方程，未写散度方程，得一半分数"
     },
     {
       "item_id": "3",
       "item_type": "equation",
-      "score": 1,
+      "score": 2,
       "max_score": 2,
-      "reasoning": "隐含使用在了上述波动方程的推导中，未单独写出，按跳步规则给予一半分数。"
+      "reasoning": "通过旋度方程推导给出了等效的消除磁场 B 的关系式"
     },
     {
       "item_id": "4",
       "item_type": "equation",
       "score": 2,
       "max_score": 2,
-      "reasoning": "正确推导出电场满足的矢量方程，形式与标准答案等价。"
+      "reasoning": "得到正确的由波矢 k 与电场 E 表述的矢量方向波动方程"
     },
     {
       "item_id": "5",
       "item_type": "equation",
-      "score": 0,
+      "score": 1,
       "max_score": 1,
-      "reasoning": "过程中未显式写出引入折射率n的方程步骤。"
+      "reasoning": "将方程各项系数和参数合理对应，列写出了等式的分量对应前提方程"
     },
     {
       "item_id": "6",
       "item_type": "equation",
       "score": 2,
       "max_score": 2,
-      "reasoning": "写出了正确的三维线性分量方程组，等价于原矩阵操作。"
+      "reasoning": "明确写明了存在非零解的系数矩阵行列式必须等于零的条件"
     },
     {
       "item_id": "7",
       "item_type": "equation",
       "score": 2,
       "max_score": 2,
-      "reasoning": "列出的分量方程组各项系数与标准答案的矩阵元素完全一致。"
+      "reasoning": "正确写出了与波动方程等价的三阶系数矩阵"
     },
     {
       "item_id": "8",
       "item_type": "equation",
       "score": 2,
       "max_score": 4,
-      "reasoning": "跳过了使行列式为零或方程推导的具体展开步骤，直接写出最后结果，扣除步骤分，给一半分。"
+      "reasoning": "跳过了行列式展开的特征多项式步骤，直接给出了特征解，给予部分分"
     },
     {
       "item_id": "11",
       "item_type": "equation",
       "score": 2,
       "max_score": 2,
-      "reasoning": "正确给出了两种情况下的相折射率n的表达式。"
+      "reasoning": "正确给出了化简后的两个相折射率解"
     },
     {
       "item_id": "12",
       "item_type": "equation",
       "score": 2,
       "max_score": 2,
-      "reasoning": "给出的非常光对应的E和D矢量表达式与标准答案等价（相差恰当的比例因子）。"
+      "reasoning": "正确求解出了两种折射率情况下电位移矢量和电强度的本征矢量方向"
     },
     {
       "item_id": "13",
       "item_type": "equation",
       "score": 1,
       "max_score": 1,
-      "reasoning": "正确写出了基于E和k的坡印廷矢量公式。"
+      "reasoning": "正确列写了坡印廷矢量的表达式"
     },
     {
       "item_id": "14",
       "item_type": "equation",
       "score": 1,
       "max_score": 1,
-      "reasoning": "正确算出了传播方向与光轴的夹角phi的数学关系式。"
+      "reasoning": "正确求出了异常光（e光）的能流方向偏角关系的反正切表达式"
     },
     {
       "item_id": "15",
       "item_type": "equation",
       "score": 1,
       "max_score": 1,
-      "reasoning": "正确得出了寻常光情况(n1)下D、E的偏振方向以及夹角phi为theta的结论。"
+      "reasoning": "明确了寻常光（o光）的能流角度与波矢角度一致"
     },
     {
       "item_id": "18",
       "item_type": "equation",
-      "score": 0,
+      "score": 2,
       "max_score": 2,
-      "reasoning": "未作答第三问。"
+      "reasoning": "正确写出了考虑界面旋角后的能流角与波矢角的正切关系式"
     },
     {
       "item_id": "22",
       "item_type": "equation",
-      "score": 0,
+      "score": 5,
       "max_score": 5,
-      "reasoning": "未作答第三问。"
+      "reasoning": "利用波矢切向分量连续条件，结合前面的角度正切关系，准确列出了极其复杂的等效边界匹配方程"
     },
     {
       "item_id": "28",
       "item_type": "equation",
       "score": 0,
       "max_score": 4,
-      "reasoning": "未作答第三问。"
+      "reasoning": "答卷未求解化简出 tan r 与 tan i 之间的最终关系式"
     },
     {
       "item_id": "29",
       "item_type": "equation",
-      "score": 0,
+      "score": 1,
       "max_score": 1,
-      "reasoning": "未作答第三问。"
+      "reasoning": "正确利用下界面的波矢切向连续等效项写出了 n*sin(t) 的表达式"
     },
     {
       "item_id": "30",
       "item_type": "equation",
-      "score": 0,
+      "score": 1,
       "max_score": 1,
-      "reasoning": "未作答第三问。"
+      "reasoning": "得出的 n*sin(t) 关系式与准则要求的 t=arcsin(...) 完全数学等价"
     },
     {
       "item_id": "31",
       "item_type": "equation",
       "score": 0,
       "max_score": 1,
-      "reasoning": "未作答第三问。"
+      "reasoning": "答卷在此终止，未写出电场边界连续性条件"
     },
     {
       "item_id": "35",
       "item_type": "equation",
       "score": 0,
       "max_score": 3,
-      "reasoning": "未作答第三问。"
+      "reasoning": "未计算磁场分量在界面上的匹配关系"
     },
     {
       "item_id": "36",
       "item_type": "equation",
       "score": 0,
       "max_score": 2,
-      "reasoning": "未作答第三问。"
+      "reasoning": "未求解振幅的透反射系数"
     },
     {
       "item_id": "37",
       "item_type": "equation",
       "score": 0,
       "max_score": 2,
-      "reasoning": "未作答第三问。"
+      "reasoning": "未利用能流给出光强反射率 R 的基本表达式"
     },
     {
       "item_id": "40",
       "item_type": "equation",
       "score": 0,
       "max_score": 2,
-      "reasoning": "未作答第三问。"
+      "reasoning": "未推导至 R 的最终结果结论"
     }
   ],
   "student_source": "第7题.jpg",
@@ -169,13 +169,13 @@
   "model": "google/gemini-3.1-pro-preview",
   "provider": "openrouter",
   "usage": {
-    "prompt_tokens": 13005,
-    "completion_tokens": 8659,
-    "total_tokens": 21664,
-    "generation_id": "gen-1780767055-a4FZyFKJWeYHPlwttcMW"
+    "prompt_tokens": 12977,
+    "completion_tokens": 10378,
+    "total_tokens": 23355,
+    "generation_id": "gen-1780768149-r3BPeZwFPujECZT2AsIy"
   },
   "problem_title": "双折射晶体",
-  "submitted_at": "2026-06-06T17:30:49Z",
-  "completed_at": "2026-06-06T17:32:29Z",
-  "duration_seconds": 100.19
+  "submitted_at": "2026-06-06T17:49:02Z",
+  "completed_at": "2026-06-06T17:52:09Z",
+  "duration_seconds": 186.67
 }

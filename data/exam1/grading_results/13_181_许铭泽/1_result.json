@@ -1,0 +1,181 @@
+{
+  "total_score": 20,
+  "max_score": 40,
+  "item_scores": [
+    {
+      "item_id": "1",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 1,
+      "reasoning": "写出了牛顿第二定律分量方程，等价于标准的受力矢量方程。"
+    },
+    {
+      "item_id": "2",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "正确写出了z方向的运动方程，等价于z方向受力表达式。"
+    },
+    {
+      "item_id": "3",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "引入复数Z（等价于u）并给出了正确的运动方程。"
+    },
+    {
+      "item_id": "4",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "得出了对应的特征方程，由于设解的形式为e^{iωt}导致一次项符号不同，属等价正确结果。"
+    },
+    {
+      "item_id": "5",
+      "item_type": "equation",
+      "score": 3,
+      "max_score": 3,
+      "reasoning": "利用判别式条件正确解出了B_0的范围。"
+    },
+    {
+      "item_id": "6",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "正确写出了包含八极势扰动的z方向运动方程。"
+    },
+    {
+      "item_id": "9",
+      "item_type": "equation",
+      "score": 3,
+      "max_score": 3,
+      "reasoning": "作小量近似并只保留一倍频，正确解出了频率的小量修正δ。"
+    },
+    {
+      "item_id": "10",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 1,
+      "reasoning": "正确给出了基频相对变化量（即修正量δ）。"
+    },
+    {
+      "item_id": "11",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "利用复数法正确写出了包含阻尼和驱动力的方程。"
+    },
+    {
+      "item_id": "12",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 1,
+      "reasoning": "正确应用一阶近似（一倍频）将其转化为复振幅方程。"
+    },
+    {
+      "item_id": "13",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 1,
+      "reasoning": "对复数方程取模，正确得出了振幅A与频率ω之间满足的方程。"
+    },
+    {
+      "item_id": "15",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "答卷中未见后续推导过程。"
+    },
+    {
+      "item_id": "16",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "答卷中未见此归一化化简。"
+    },
+    {
+      "item_id": "17",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "答卷中虽然提及求导条件，但未给出等价的无量纲导数方程。"
+    },
+    {
+      "item_id": "20",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "答卷中未见此推导。"
+    },
+    {
+      "item_id": "21",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "答卷中未见此推导。"
+    },
+    {
+      "item_id": "22",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "答卷中未计算出临界驱动力下界。"
+    },
+    {
+      "item_id": "23",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "未见相对论部分作答内容。"
+    },
+    {
+      "item_id": "24",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "未见此步骤解答。"
+    },
+    {
+      "item_id": "25",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 3,
+      "reasoning": "未见此步骤解答。"
+    },
+    {
+      "item_id": "26",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "未见此步骤解答。"
+    },
+    {
+      "item_id": "27",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "未见此步骤解答。"
+    },
+    {
+      "item_id": "说明可能存在三值区间_1",
+      "item_type": "text",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "未见此讨论。"
+    }
+  ],
+  "student_source": "第1题.jpg",
+  "standard_source": "penning_trap.tex",
+  "model": "google/gemini-3.1-pro-preview",
+  "provider": "openrouter",
+  "usage": {
+    "prompt_tokens": 7240,
+    "completion_tokens": 7959,
+    "total_tokens": 15199,
+    "generation_id": "gen-1780768349-nnh4rz3lUXGWKeMkiyLO"
+  },
+  "problem_title": "潘宁阱",
+  "submitted_at": "2026-06-06T17:52:24Z",
+  "completed_at": "2026-06-06T17:53:26Z",
+  "duration_seconds": 62.36
+}

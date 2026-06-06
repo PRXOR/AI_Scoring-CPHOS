@@ -1,0 +1,181 @@
+{
+  "total_score": 18,
+  "max_score": 40,
+  "item_scores": [
+    {
+      "item_id": "1",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 1,
+      "reasoning": "学生写出了电磁力的各分量方程，与标准答案的矢量方程等价。"
+    },
+    {
+      "item_id": "2",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "学生写出了z方向的运动方程，包含对应的受力表达式。"
+    },
+    {
+      "item_id": "3",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "学生令 ξ=x+iy，并写出了正确的复平面运动微分方程，与标准答案等价。"
+    },
+    {
+      "item_id": "4",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "学生写出了特征方程，代入 s=-iω 即可得到标准答案中的角频率方程，两者等价。"
+    },
+    {
+      "item_id": "5",
+      "item_type": "equation",
+      "score": 3,
+      "max_score": 3,
+      "reasoning": "学生通过判别式大于等于0正确求解出了B_0的下界。"
+    },
+    {
+      "item_id": "6",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "学生写出了正确的一阶近似下的轴向（z方向）运动微分方程。"
+    },
+    {
+      "item_id": "9",
+      "item_type": "equation",
+      "score": 3,
+      "max_score": 3,
+      "reasoning": "学生通过微扰论或等效方法正确求解出频移量 Δω（等价于特征频率表达），保留了一阶截断项。"
+    },
+    {
+      "item_id": "10",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 1,
+      "reasoning": "学生明确写出了基频相对变化量的最终正确表达式。"
+    },
+    {
+      "item_id": "11",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "学生写出了有阻尼和驱动力作用下的微分方程，除以了m，与标准答案等价。"
+    },
+    {
+      "item_id": "12",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "学生在代入试探解时未正确考虑驱动力与位移之间的相位差，未能写出正确的谐波平衡展开式。"
+    },
+    {
+      "item_id": "13",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "学生未给出正确的关于振幅的模长平方方程。"
+    },
+    {
+      "item_id": "15",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "答卷中未见对应内容。"
+    },
+    {
+      "item_id": "16",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "答卷中未见对应内容。"
+    },
+    {
+      "item_id": "17",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "答卷中未见对应内容。"
+    },
+    {
+      "item_id": "20",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "答卷中未见对应内容。"
+    },
+    {
+      "item_id": "21",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "答卷中未见对应内容。"
+    },
+    {
+      "item_id": "22",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "答卷中未见对应内容。"
+    },
+    {
+      "item_id": "23",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "答卷中未见对应内容。"
+    },
+    {
+      "item_id": "24",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "答卷中未见对应内容。"
+    },
+    {
+      "item_id": "25",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 3,
+      "reasoning": "答卷中未见对应内容。"
+    },
+    {
+      "item_id": "26",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "答卷中未见对应内容。"
+    },
+    {
+      "item_id": "27",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "答卷中未见对应内容。"
+    },
+    {
+      "item_id": "说明可能存在三值区间_1",
+      "item_type": "text",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "答卷中未见对应内容。"
+    }
+  ],
+  "student_source": "第1题.jpg",
+  "standard_source": "penning_trap.tex",
+  "model": "google/gemini-3.1-pro-preview",
+  "provider": "openrouter",
+  "usage": {
+    "prompt_tokens": 7212,
+    "completion_tokens": 5130,
+    "total_tokens": 12342,
+    "generation_id": "gen-1780767662-O9lbIk472fRR1bhmWXFm"
+  },
+  "problem_title": "潘宁阱",
+  "submitted_at": "2026-06-06T17:40:55Z",
+  "completed_at": "2026-06-06T17:41:58Z",
+  "duration_seconds": 62.55
+}

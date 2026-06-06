@@ -25,8 +25,12 @@ from __future__ import annotations
 import json
 import logging
 import os
+import queue
 import re
-from dataclasses import asdict
+import threading
+import uuid
+from dataclasses import asdict, dataclass, field
+from datetime import datetime, timezone
 from pathlib import Path
 
 from fastapi import APIRouter, Body, HTTPException
@@ -543,3 +547,227 @@ def grade_full_paper(
             "total_tokens": total_total,
         },
     }
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# 后台阅卷任务（work list）— 让批改在服务端进行，刷新页面也不中断
+# ─────────────────────────────────────────────────────────────────────────────
+
+
+def _now() -> str:
+    return datetime.now(timezone.utc).isoformat()
+
+
+@dataclass
+class _Task:
+    student_id: str
+    student_name: str
+    paper_id: str
+    status: str = "waiting"  # waiting | grading | done | failed | cancelled
+    score: int | None = None
+    max_score: int | None = None
+    error: str | None = None
+
+
+@dataclass
+class _Job:
+    id: str
+    exam_id: str
+    mode: str  # "paper" | "full"
+    paper_id: str | None
+    verbosity: int
+    strictness: int
+    status: str = "running"  # running | done | cancelled
+    created_at: str = field(default_factory=_now)
+    updated_at: str = field(default_factory=_now)
+    tasks: list[_Task] = field(default_factory=list)
+
+
+_jobs: dict[str, _Job] = {}
+_job_lock = threading.Lock()
+_task_queue: "queue.Queue[tuple[str, int]]" = queue.Queue()
+_worker_started = False
+
+
+def _ensure_worker() -> None:
+    global _worker_started
+    with _job_lock:
+        if _worker_started:
+            return
+        _worker_started = True
+    threading.Thread(target=_worker_loop, name="exam-grader", daemon=True).start()
+
+
+def _worker_loop() -> None:
+    """单一后台线程：串行处理任务队列，结果落盘后即可被前端轮询读取。"""
+    while True:
+        job_id, idx = _task_queue.get()
+        try:
+            job = _jobs.get(job_id)
+            if not job or job.status == "cancelled":
+                continue
+            task = job.tasks[idx]
+            if task.status != "waiting":
+                continue
+            with _job_lock:
+                task.status = "grading"
+                job.updated_at = _now()
+            try:
+                data = _grade_task(job, task)
+                with _job_lock:
+                    task.status = "done"
+                    task.score = int(data.get("total_score", 0))
+                    task.max_score = int(data.get("max_score", 0))
+            except Exception as exc:  # noqa: BLE001 — 单题失败不影响整体
+                logger.exception("job %s task %s/%s failed", job_id, task.student_id, task.paper_id)
+                with _job_lock:
+                    task.status = "failed"
+                    task.error = str(exc)
+            finally:
+                with _job_lock:
+                    job.updated_at = _now()
+                    if all(t.status in ("done", "failed", "cancelled") for t in job.tasks):
+                        job.status = "done" if job.status != "cancelled" else "cancelled"
+        finally:
+            _task_queue.task_done()
+
+
+def _grade_task(job: _Job, task: _Task) -> dict:
+    """执行单个任务：优先复用已保存结果，否则调用模型评分。"""
+    exam_dir = (_data_root() / job.exam_id).resolve()
+    saved = _load_saved_result(exam_dir, task.student_id, task.paper_id)
+    if saved is not None:
+        return saved
+
+    student_dir = exam_dir / "student_answers" / task.student_id
+    images = [student_dir / n for n in _image_names(task.paper_id) if (student_dir / n).exists()]
+    if not images:
+        raise RuntimeError("缺少答卷图片")
+    paper_dir = exam_dir / "paper" / task.paper_id
+    tex = _paper_tex(paper_dir)
+    if tex is None:
+        raise RuntimeError("缺少标准答案 .tex")
+    return _grade_one(
+        exam_dir, task.student_id, task.paper_id, images, tex,
+        job.verbosity, job.strictness,
+    )
+
+
+def _build_tasks(
+    exam_dir: Path, mode: str, paper_id: str | None,
+    student_ids: list[str] | None,
+) -> list[_Task]:
+    students = _list_students(exam_dir)
+    if student_ids:
+        wanted = set(student_ids)
+        students = [s for s in students if s["id"] in wanted]
+    papers = _list_papers(exam_dir)
+    if mode == "paper":
+        papers = [p for p in papers if p["id"] == paper_id]
+        if not papers:
+            raise HTTPException(404, f"题目不存在: {paper_id}")
+
+    tasks: list[_Task] = []
+    for s in students:
+        avail = set(s.get("available_images", []))
+        for p in papers:
+            t = _Task(student_id=s["id"], student_name=s.get("name", s["id"]), paper_id=p["id"])
+            saved = _load_saved_result(exam_dir, s["id"], p["id"])
+            if saved is not None:
+                t.status = "done"
+                t.score = int(saved.get("total_score", 0))
+                t.max_score = int(saved.get("max_score", p["max_score"]))
+            elif not any(n in avail for n in p["image_names"]):
+                t.status = "failed"
+                t.error = "缺少答卷图片"
+            tasks.append(t)
+    return tasks
+
+
+def _job_public(job: _Job) -> dict:
+    return asdict(job)
+
+
+def _prune_jobs() -> None:
+    """保留最近的若干任务，清理过多的已完成任务。"""
+    if len(_jobs) <= 40:
+        return
+    done = sorted(
+        (j for j in _jobs.values() if j.status != "running"),
+        key=lambda j: j.updated_at,
+    )
+    for j in done[: len(_jobs) - 40]:
+        _jobs.pop(j.id, None)
+
+
+@router.post("/{exam_id}/jobs")
+def start_job(
+    exam_id: str,
+    mode: str = Body("paper"),
+    paper_id: str | None = Body(None),
+    student_ids: list[str] | None = Body(None),
+    verbosity: int = Body(1),
+    strictness: int = Body(1),
+) -> dict:
+    """创建后台阅卷任务并立即返回；评分在服务端进行，刷新页面不影响。"""
+    if mode not in ("paper", "full"):
+        raise HTTPException(400, f"Invalid mode: {mode}")
+    if mode == "paper" and not paper_id:
+        raise HTTPException(400, "paper 模式需要 paper_id")
+
+    data_root = _data_root()
+    exam_dir = _safe_child(data_root, exam_id)
+    tasks = _build_tasks(exam_dir, mode, paper_id, student_ids)
+
+    job = _Job(
+        id=uuid.uuid4().hex[:12],
+        exam_id=exam_id,
+        mode=mode,
+        paper_id=paper_id if mode == "paper" else None,
+        verbosity=verbosity,
+        strictness=strictness,
+        tasks=tasks,
+    )
+    with _job_lock:
+        _jobs[job.id] = job
+        _prune_jobs()
+        if all(t.status in ("done", "failed", "cancelled") for t in job.tasks):
+            job.status = "done"
+    # 入队待批改任务
+    for idx, t in enumerate(job.tasks):
+        if t.status == "waiting":
+            _task_queue.put((job.id, idx))
+    _ensure_worker()
+    return _job_public(job)
+
+
+@router.get("/{exam_id}/jobs")
+def list_jobs(exam_id: str) -> dict:
+    """返回该考试的全部任务（前端刷新后据此恢复进行中状态）。"""
+    with _job_lock:
+        jobs = [_job_public(j) for j in _jobs.values() if j.exam_id == exam_id]
+    jobs.sort(key=lambda j: j["created_at"])
+    return {"exam_id": exam_id, "jobs": jobs}
+
+
+@router.get("/{exam_id}/jobs/{job_id}")
+def get_job(exam_id: str, job_id: str) -> dict:
+    job = _jobs.get(job_id)
+    if not job or job.exam_id != exam_id:
+        raise HTTPException(404, f"Job not found: {job_id}")
+    return _job_public(job)
+
+
+@router.post("/{exam_id}/jobs/{job_id}/cancel")
+def cancel_job(exam_id: str, job_id: str) -> dict:
+    """取消任务：尚未开始的任务标记取消，正在批改的一题会完成后停止。"""
+    job = _jobs.get(job_id)
+    if not job or job.exam_id != exam_id:
+        raise HTTPException(404, f"Job not found: {job_id}")
+    with _job_lock:
+        job.status = "cancelled"
+        for t in job.tasks:
+            if t.status == "waiting":
+                t.status = "cancelled"
+        job.updated_at = _now()
+    return _job_public(job)

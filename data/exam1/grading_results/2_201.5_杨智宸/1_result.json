@@ -1,0 +1,181 @@
+{
+  "total_score": 27,
+  "max_score": 40,
+  "item_scores": [
+    {
+      "item_id": "1",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 1,
+      "reasoning": "正确写出了带电粒子受力的各个分量方程，与标准答案的矢量或分量表达等效。"
+    },
+    {
+      "item_id": "2",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "正确得出了z方向的运动方程，物理等价于z方向受力公式。"
+    },
+    {
+      "item_id": "3",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "引入复变量，正确写出了径向运动方程。"
+    },
+    {
+      "item_id": "4",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "通过复指数解提取出了等价的关于频率ω的方程（一元二次方程求根公式形态）。"
+    },
+    {
+      "item_id": "5",
+      "item_type": "equation",
+      "score": 3,
+      "max_score": 3,
+      "reasoning": "正确解出了使质点被局限的磁场强度范围。"
+    },
+    {
+      "item_id": "6",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "正确写出了包含八极势扰动的z方向非线性运动方程。"
+    },
+    {
+      "item_id": "9",
+      "item_type": "equation",
+      "score": 3,
+      "max_score": 3,
+      "reasoning": "推导出了受扰动后的频率平方，等效得出了频率的一阶修正表达式。"
+    },
+    {
+      "item_id": "10",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 1,
+      "reasoning": "正确得出了质点z方向运动基频相对变化量。"
+    },
+    {
+      "item_id": "11",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "正确写出包含阻尼和驱动力的z方向受迫振动完整方程。"
+    },
+    {
+      "item_id": "12",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 1,
+      "reasoning": "正确利用一倍频近似写出了相对应的谐波分量平衡方程。"
+    },
+    {
+      "item_id": "13",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 1,
+      "reasoning": "正确得出了振幅与频率的响应关系方程（通过实虚部平方和）。"
+    },
+    {
+      "item_id": "15",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "使用了其他等价求解路径（直接寻找幅频曲线的极值点与垂直切线），未使用标准答案的无量纲代换，该过渡公式未体现。"
+    },
+    {
+      "item_id": "16",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "求解路径不同，未写出该具体归一化方程，虽中间跨度较大但最终结果正确，此处按跳步处理不给分。"
+    },
+    {
+      "item_id": "17",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 1,
+      "reasoning": "明确写出了求导寻找三值区间临界点（df0^2/dA^2=0，dω/dA=0）的条件，与标准解答对δ(w)寻找驻点的物理和数学意义完全等价。"
+    },
+    {
+      "item_id": "20",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "未使用参量N，因此没有写出该不等式。"
+    },
+    {
+      "item_id": "21",
+      "item_type": "equation",
+      "score": 1,
+      "max_score": 1,
+      "reasoning": "通过自身的导数条件正确得出了与临界点完全等价的临界频率偏移量（ω_c），为对应关键步骤的等价里程碑，给分。"
+    },
+    {
+      "item_id": "22",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "沿着等价的正确思路，最终得出的临界驱动力F_c表达式完全正确（代入参量后与标准答案数学形式100%一致）。"
+    },
+    {
+      "item_id": "23",
+      "item_type": "equation",
+      "score": 2,
+      "max_score": 2,
+      "reasoning": "正确写出了包含相对论效应和阻尼、驱动力的动量随时间变化方程式（使用p和γ的定义式，完全等价）。"
+    },
+    {
+      "item_id": "24",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "未将复数v及其随时间的复指数关系代入完整微分方程。"
+    },
+    {
+      "item_id": "25",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 3,
+      "reasoning": "未引入旋转坐标系的复动量并化简。"
+    },
+    {
+      "item_id": "26",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 2,
+      "reasoning": "未完成包含驱动项的模方程推导。"
+    },
+    {
+      "item_id": "27",
+      "item_type": "equation",
+      "score": 0,
+      "max_score": 1,
+      "reasoning": "未能得到展开到一阶后的表达式。"
+    },
+    {
+      "item_id": "说明可能存在三值区间_1",
+      "item_type": "text",
+      "score": 1,
+      "max_score": 2,
+      "reasoning": "尽管未完成完整的振幅逼近方程，但独立推导出了粒子回旋频率随速度（对应振幅）非线性变化的等式，并依此正确地得出了可能出现三值区间的物理结论。"
+    }
+  ],
+  "student_source": "第1题.jpg",
+  "standard_source": "penning_trap.tex",
+  "model": "google/gemini-3.1-pro-preview",
+  "provider": "openrouter",
+  "usage": {
+    "prompt_tokens": 7212,
+    "completion_tokens": 16362,
+    "total_tokens": 23574,
+    "generation_id": "gen-1780767314-q049HGnSZFgLTg9PQ9Rd"
+  },
+  "problem_title": "潘宁阱",
+  "submitted_at": "2026-06-06T17:30:37Z",
+  "completed_at": "2026-06-06T17:37:48Z",
+  "duration_seconds": 430.63
+}
